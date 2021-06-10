@@ -77,7 +77,11 @@ MASVS_TITLES = {
 }
 
 def get_hyperlink(url):
-    title = url.split('#')[1].replace('-',' ').capitalize() 
+    # title = url.split('#')[1].replace('-',' ').capitalize() 
+    if '/0x05' in url:
+        title = 'Android'
+    elif '/0x06' in url:
+        title = 'iOS'
     return f'=HYPERLINK("{url}", "{title}")'
 
 # CHECKMARK = "✓"
@@ -131,6 +135,12 @@ def write_table(masvs_file, output_file):
     big_title.alignment = align_left
     wb.add_named_style(big_title)
 
+    gray_header = NamedStyle(name="gray_header")
+    gray_header.font = Font(name='Calibri', bold=True, color="00C0C0C0")
+    # gray_header.fill = PatternFill("solid", fgColor="00C0C0C0")
+    gray_header.alignment = align_center
+    wb.add_named_style(gray_header)
+
     # table = wb['Security Requirements']
 
     table.row_dimensions[2].height = 65
@@ -142,13 +152,17 @@ def write_table(masvs_file, output_file):
     table['D2'].value = "Mobile Application Security Verification Standard"
     table['D2'].style = big_title
 
+    table['D3'].value = f'=HYPERLINK("https://github.com/OWASP/owasp-masvs/releases/tag/v1.3", "v1.3 (git: 496d39821f17e92fca49eadb35eddb7468012b3c)")'
+    table['D3'].font = Font(name='Calibri', color="00C0C0C0")
+
     table.column_dimensions['B'].width = 5
     table.column_dimensions['C'].width = 23
     table.column_dimensions['D'].width = 80
     table.column_dimensions['E'].width = 5
     table.column_dimensions['F'].width = 5
     table.column_dimensions['G'].width = 5
-    table.column_dimensions['H'].width = 70
+    table.column_dimensions['H'].width = 10
+    table.column_dimensions['I'].width = 10
 
     row=4
     col_id=2
@@ -157,7 +171,8 @@ def write_table(masvs_file, output_file):
     col_l1=5
     col_l2=6
     col_r=7
-    col_link=8
+    col_link_android=8
+    col_link_ios=9
 
     for mstg_id, req in masvs_dict.items():
         req_id = req['id'].split('.') 
@@ -187,14 +202,40 @@ def write_table(masvs_file, output_file):
             # title_cell_2.alignment = align_left
             
 
-            table.merge_cells(start_row=row, end_row=row, start_column=col_id, end_column=col_id+5)
+            table.merge_cells(start_row=row, end_row=row, start_column=col_id, end_column=col_link_ios)
 
             table.row_dimensions[row].height = 25 # points
             row = row+2
+
+            table.cell(row=row,column=col_id).value = 'ID'
+            table.cell(row=row,column=col_id).style = 'gray_header'
+
+            table.cell(row=row,column=col_mstg_id).value = 'MSTG-ID'
+            table.cell(row=row,column=col_mstg_id).style = 'gray_header'
+            
+            table.cell(row=row,column=col_text).value = 'Control'
+            table.cell(row=row,column=col_text).style = 'gray_header'
+
+            table.cell(row=row,column=col_l1).value = 'L1'
+            table.cell(row=row,column=col_l1).style = 'gray_header'
+            table.cell(row=row,column=col_l2).value = 'L2'
+            table.cell(row=row,column=col_l2).style = 'gray_header'
+            table.cell(row=row,column=col_r).value = 'R'
+            table.cell(row=row,column=col_r).style = 'gray_header'
+
+            table.cell(row=row,column=col_link_android).value = 'MSTG Test Coverage'
+            table.cell(row=row,column=col_link_android).style = 'gray_header'
+            table.merge_cells(start_row=row, end_row=row, start_column=col_link_android, end_column=col_link_ios)
+
+            row = row + 2
         
         # l1 = CHECKMARK if req['L1'] else ""
         # l2 = CHECKMARK if req['L2'] else ""
         # r = CHECKMARK if req['R'] else ""
+
+
+
+        # End header
 
         table.cell(row=row,column=col_id).value = req['id']
         table.cell(row=row,column=col_id).style = 'center'
@@ -215,8 +256,17 @@ def write_table(masvs_file, output_file):
             # table.cell(row=row,column=col_r).value = r
             table.cell(row=row,column=col_r).style = 'orange'
         if req.get('links'):
-            table.cell(row=row,column=col_link).value = get_hyperlink(req['links'][0])
-        
+            table.cell(row=row,column=col_link_android).value = get_hyperlink(req['links'][0])
+            table.cell(row=row,column=col_link_android).style = 'center'
+            if len(req['links']) >= 2:
+                table.cell(row=row,column=col_link_ios).value = get_hyperlink(req['links'][1])
+                table.cell(row=row,column=col_link_ios).style = 'center'
+        else:
+            table.cell(row=row,column=col_link_android).value = 'N/A'
+            table.cell(row=row,column=col_link_android).style = 'center'
+            table.cell(row=row,column=col_link_ios).value = 'N/A'
+            table.cell(row=row,column=col_link_ios).style = 'center'
+            
         table.row_dimensions[row].height = 55 # points
 
         row = row+1
