@@ -1,4 +1,4 @@
-<a href="https://github.com/OWASP/owasp-masvs/releases/download/v1.2/OWASP_MASVS-v1.2-en.pdf"><img width="25%" align="right" style="float: right;" src="Document/images/masvs-mini-cover.png"></a>
+<a href="https://github.com/OWASP/owasp-masvs/releases/download/v1.3/OWASP_MASVS-v1.3-en.pdf"><img width="25%" align="right" style="float: right;" src="Document/images/masvs-mini-cover.png"></a>
 
 # OWASP Mobile Application Security Verification Standard [![Twitter Follow](https://img.shields.io/twitter/follow/OWASP_MSTG.svg?style=social&label=Follow)](https://twitter.com/OWASP_MSTG)
 
@@ -19,9 +19,9 @@ The MASVS is a sister project of the [OWASP Mobile Security Testing Guide](https
 
 # Getting the MASVS
 
-PDF/Mobi/Epub/Docx downloads are available on the [Releases page](https://github.com/OWASP/owasp-masvs/releases "Releases"). The documents were created by using [pandocker](https://github.com/dalibo/pandocker/ "pandocker").
+The latest version of the MASVS is available as PDF, epub and docx and can be downloaded from the [releases page](https://github.com/OWASP/owasp-masvs/releases "Releases"). The documents were created by using [pandocker](https://github.com/dalibo/pandocker/ "pandocker").
 
-The current release of the [MASVS is version 1.2](https://github.com/OWASP/owasp-masvs/releases/tag/v1.2 "MASVS version 1.2"). Want to have the latest `snapshot` version? Check [the latest Github build action](https://github.com/OWASP/owasp-masvs/actions?query=workflow%3A%22Document+Build%22). The MASVS is also available in different languages:
+Want to have the latest `snapshot` version? Check [the latest Github build action](https://github.com/OWASP/owasp-masvs/actions?query=workflow%3A%22Document+Build%22). The MASVS is also available in different languages:
 
 - [Brazilian Portuguese](https://github.com/OWASP/owasp-masvs/tree/master/Document-ptbr "Brazilian Portuguese")
 - [Chinese (Simplified) - ZHCN](https://github.com/OWASP/owasp-masvs/tree/master/Document-zhcn "Simplified Chinese (ZHCN)")
@@ -41,15 +41,43 @@ The current release of the [MASVS is version 1.2](https://github.com/OWASP/owasp
 
 Read the English version on [Gitbook](https://mobile-security.gitbook.io/masvs/ "GitBook Mobile AppSec Verification Standard"). The book is automatically synchronized with the main repo.
 
-## Create new PDF, Epub, Mobi, and Word document
+## Create new PDF, EPUB and Word document
 
-You can find the documents in the release page. If you want to generate the documents yourself, execute the following steps. Clone the repository and run the document generator. This produces PDF, Epub and Docx files in the root of the project.
+> These steps were tested on macOS, Kali and Ubuntu 18
+
+You can find the documents on the [release page](https://github.com/OWASP/owasp-masvs/releases). If you want to generate the documents yourself, execute the following steps:
+
+- The document creation uses a Docker container, so make sure that you have [Docker installed](https://www.docker.com/products/docker-desktop).
+
+- If using macOS, install `gnu-sed` via brew.
+
+```shell
+$ brew install gnu-sed
+```
+
+- Clone the MASVS repository:
 
 ```shell
 $ git clone https://github.com/OWASP/owasp-masvs/
-$ cd owasp-masvs/tools/docker
-$ ./run_docker_masvs_generation_on_local.sh LATEST
+$ cd owasp-masvs/
 ```
+
+- Run the document generation script for the chosen language with latin-fonts:
+
+```shell
+$ ./tools/docker/pandoc_makedocs.sh Document-de LATEST
+```
+
+- "Document-de" specifies the folder of the language that is used to generate the documents. Simply replace it with the language you want to use.
+- "LATEST" is the string that will be printed on the cover.
+
+- For languages that require non-latin fonts (Chinese, Farsi, Hindi, Japanese, Korean, Russian etc.) the `stable-full` version of Pandocker is required. You can activate it with the `TAG` environment variable, like this:
+
+```shell
+$ TAG=stable-full ./tools/docker/pandoc_makedocs.sh Document-hi LATEST
+```
+
+This produces PDF, EPUB and DOCX files in the root of the project.
 
 ## Exporting to JSON, XML and CSV
 
