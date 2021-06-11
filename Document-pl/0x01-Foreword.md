@@ -1,4 +1,4 @@
-# Foreword
+# Przedmowa
 
 Technologiczne rewolucje mogą zdarzyć się często. Nie krócej niż dekadę temu, smartfony były niezgrabnymi urządzeniami z małymi klawiaturami - drogie zabawki dla obeznanych w technologię użytkowników biznesowych. Dzisiaj smartfony są kluczową częścią naszego życia. Polegamy na nich dla doinformowania, nawigacji oraz komunikacji i są wszechobecne zarówno w biznesie jak i w życiu społecznym.
 
