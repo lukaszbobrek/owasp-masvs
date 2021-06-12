@@ -1,6 +1,6 @@
 # Przedmowa
 
-Technologiczne rewolucje mogą zdarzyć się często. Nie krócej niż dekadę temu, smartfony były niezgrabnymi urządzeniami z małymi klawiaturami - drogie zabawki dla obeznanych w technologię użytkowników biznesowych. Dzisiaj smartfony są kluczową częścią naszego życia. Polegamy na nich dla doinformowania, nawigacji oraz komunikacji i są wszechobecne zarówno w biznesie jak i w życiu społecznym.
+Technologiczne rewolucje mogą zdarzyć się często. Nie krócej niż dekadę temu, smartfony były niezgrabnymi urządzeniami z małymi klawiaturami - drogie zabawki dla obeznanych w technologię użytkowników biznesowych. Dzisiaj smartfony są kluczową częścią naszego życia. Polegamy na nich w doinformowaniu, nawigacji oraz komunikacji i są wszechobecne zarówno w biznesie jak i w życiu społecznym.
 
 Każda nowa technologia wprowadza nowe zagrożenia bezpieczeństwa i nadążanie nad tymi zmianami jest jednym z głównych wyzwań, z którymi branża bezpieczeństwa się mierzy. Strona broniąca się jest zawsze kilka kroków do tyłu. Na przykład, pierwotnym odruchem dla wielu z nas było zaaplikowanie starych rozwiązań: Smartfony są niczym małe komputery, a aplikacje mobilne to tylko zwyczajne oprogramowanie, więc na pewno wymagania bezpieczeństwa są podobne, tak? To nie działa w ten sposób. Systemy operacyjne smartfonów są inne niż te ze stacji roboczych, a aplikacje mobilne różnią się od aplikacji internetowych. Na przykład - klasyczna metoda skanowania wirusów na podstawie ich sygnatur nie ma sensu we współczesnym środowisku mobilnego systemu operacyjnego: Nie dość, że jest to niekompatybilne z dystrybucją urządzeń mobilnych, jest to również technicznie niemożliwee z powodu ograniczeń sandboxów. Ponadto, kilka klas podatności, jak przepełnienie buforu i XSS są mniej znaczące w kontekście przeciętnych mobilnych aplikacji niż w aplikacjach 'stacjonarnych' i internetowych (istnieją odstępstwa).
 
@@ -21,6 +21,6 @@ Ogólnym celem MASVS jest zaoferowanie podstaw dla bezpieczeństwa mobilnych apl
 - Przejrzystość roli mechanizmów ochrony w bezpieczeństwie mobilnym i zapewnienie wymagań do zweryfikowania ich efektywności;
 - Zapewnienie specyficznych zaleceń wobec tego jaki poziom bezpieczeństwa jest zalecany dla różnych przypadków użycia.
 
-Jesteśmy świadom tego, że 100% konsensus w branży jest niemożliwy do osiągnięcia. Mimo to, mamy nadzieję, że MASVS będzie użyteczny w dostarczeniu porad we wszystkich fazach tworzenia aplikacji mobilnych i ich testowania. MASVS będzie rozwijać się z biegiem czasu i przyjmiemy jakikolwiek wkład bądź sugestie.
+Jesteśmy świadomi tego, że 100% konsensus w branży jest niemożliwy do osiągnięcia. Mimo to, mamy nadzieję, że MASVS będzie użyteczny w dostarczeniu porad we wszystkich fazach tworzenia aplikacji mobilnych i ich testowania. MASVS będzie rozwijać się z biegiem czasu i przyjmiemy jakikolwiek wkład bądź sugestie.
 
 Stworzone przez Bernharda Muellera
