@@ -21,6 +21,6 @@ Ogólnym celem MASVS jest zaoferowanie podstaw dla bezpieczeństwa mobilnych apl
 - Przejrzystość roli mechanizmów ochrony w bezpieczeństwie mobilnym i zapewnienie wymagań do zweryfikowania ich efektywności;
 - Zapewnienie specyficznych zaleceń wobec tego jaki poziom bezpieczeństwa jest zalecany dla różnych przypadków użycia.
 
-Jesteśmy świadom tego, że 100% konsensus w branży jest niemożliwy do osiągnięcia. Mimo to, mamy nadzieję, że MASVS będzie użyteczny w dostarczeniu porad we wszystkich fazach tworzenia aplikacji mobilnych i ich testowania. MASVS będzie rozwijać się z biegiem czasu i przyjmiemy jakikolwiek wkład bądź sugestie.
+Jesteśmy świadomi tego, że 100% konsensus w branży jest niemożliwy do osiągnięcia. Mimo to, mamy nadzieję, że MASVS będzie użyteczny w dostarczeniu porad we wszystkich fazach tworzenia aplikacji mobilnych i ich testowania. MASVS będzie rozwijać się z biegiem czasu i przyjmiemy jakikolwiek wkład bądź sugestie.
 
 Stworzone przez Bernharda Muellera
