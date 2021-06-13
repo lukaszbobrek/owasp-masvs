@@ -1,6 +1,6 @@
 # V1: Wymagania Architektury, Projektowania and Modelowania Zagrożeń 
 
-## Cel Kontroli
+## Cele 
 
 W idealnym świecie bezpieczeństwo byłoby brane pod uwagę we wszystkich fazach rozwoju. W rzeczywistości jednak bezpieczeństwo jest często rozważane tylko na późnym etapie SDLC. Oprócz kontroli technicznych, MASVS wymaga istnienia procesów zapewniających, że bezpieczeństwo zostało wyraźnie uwzględnione podczas planowania architektury aplikacji mobilnej oraz że znane są role funkcjonalne i bezpieczeństwa wszystkich komponentów. Ponieważ większość aplikacji mobilnych pełni rolę klientów usług zdalnych, należy zadbać o to, aby również w stosunku do tych usług stosowane były odpowiednie standardy bezpieczeństwa – testowanie aplikacji mobilnej w izolacji nie jest wystarczające.
 
@@ -12,7 +12,7 @@ The requirements for MASVS-L1 and MASVS-L2 are listed below.
 
 | # | MSTG-ID | Description | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
-| **1.1** | MSTG-ARCH-1 | Wszystkie komponenty aplikacji są rozpoznane i wiadomo, że są potrzebne . | x | x |
+| **1.1** | MSTG-ARCH-1 | Wszystkie komponenty aplikacji są rozpoznane i rzeczywiście potrzebne . | x | x |
 | **1.2** | MSTG-ARCH-2 | Kontrole bezpieczeństwa nigdy nie są wymuszane tylko po stronie klienckiej, ale na odpowiednich zdalnych punktach końcowych | x | x |
 | **1.3** | MSTG-ARCH-3 | Zdefiniowano architekturę wysokiego poziomu dla aplikacji mobilnej i wszystkich podłączonych usług zdalnych, w której zajęto się bezpieczeństwem | x | x |
 | **1.4** | MSTG-ARCH-4 | Dane uważane za wrażliwe w kontekście aplikacji mobilnej są wyraźnie zidentyfikowane | x | x |
@@ -22,7 +22,7 @@ The requirements for MASVS-L1 and MASVS-L2 are listed below.
 | **1.8** | MSTG-ARCH-8 | Istnieje wyraźna polityka dotycząca zarządzania kluczami kryptograficznymi (jeśli istnieją) oraz wymuszany jest cykl życia kluczy kryptograficznych. Idealnie, postępuj zgodnie ze standardem zarządzania kluczami, takim jak NIST SP 800-57. |  | x |
 | **1.9** | MSTG-ARCH-9 | Istnieje mechanizm wymuszania aktualizacji aplikacji mobilnej. |  | x |
 | **1.10** | MSTG-ARCH-10 | Bezpieczeństwo dotyczy wszystkich ciągłych cykli rozwoju oprogramowania |  | x |
-| **1.11** | MSTG-ARCH-11 | Istnieje Polityka Odpowiedzialnego Ujawniania Podatności (VDP) i jest skutecznie stosowana |  | x |
+| **1.11** | MSTG-ARCH-11 | Istnieje Polityka Odpowiedzialnego Zgłaszania Podatności (VDP) i jest skutecznie stosowana |  | x |
 | **1.12** | MSTG-ARCH-12 | Aplikacja powinna być zgodna z przepisami i regulacjami dotyczącymi prywatności. | x | x |
 
 ## Bibliografia
