@@ -34,11 +34,11 @@ The vast majority of data disclosure issues can be prevented by following simple
 | **2.12** | MSTG-STORAGE-12 | The app educates the user about the types of personally identifiable information processed, as well as security best practices the user should follow in using the app. |  | x |
 | **2.13** | MSTG-STORAGE-13 | No sensitive data should be stored locally on the mobile device. Instead, data should be retrieved from a remote endpoint when needed and only be kept in memory. |  | x |
 | **2.14** | MSTG-STORAGE-14 | If sensitive data is still required to be stored locally, it should be encrypted using a key derived from hardware backed storage which requires authentication. |  | x |
-| **2.15** | MSTG-STORAGE-15 | The app’s local storage should be wiped after an excessive number of failed authentication attempts. |  | x |
+| **2.15** | MSTG-STORAGE-15 | Pamięć lokalna aplikacji powinna zostać wyczyszczona po nadmiernej liczbie nieudanych prób uwierzytelnienia. |  | x |
 
-## References
+## Bibliografia
 
-The OWASP Mobile Security Testing Guide provides detailed instructions for verifying the requirements listed in this section.
+Przewodnik testowania zabezpieczeń mobilnych OWASP zawiera szczegółowe instrukcje dotyczące weryfikacji wymagań wymienionych w tej sekcji.
 
 - Android: Testing Data Storage - <https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05d-Testing-Data-Storage.md>
 - iOS: Testing Data Storage - <https://github.com/OWASP/owasp-mstg/blob/master/Document/0x06d-Testing-Data-Storage.md>
