@@ -7,3 +7,8 @@ controls - kontrole; kontrole dla [...]
 tampering - sfałszowanie / naruszenie kodu
 resiliency - niezawodność
 extract - wydobyć
+Trust Marks - Oznaczeń zaufania
+forking - rozdwajanie
+traceability - 
+black-box - black-box
+white-box - white-box
