@@ -9,6 +9,6 @@ resiliency - niezawodność
 extract - wydobyć
 Trust Marks - Oznaczeń zaufania
 forking - rozdwajanie
-traceability - 
+traceability -
 black-box - black-box
 white-box - white-box
