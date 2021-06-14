@@ -6,7 +6,7 @@
 [Starsza, polska wersja ASVS](https://owasp.org/www-pdf-archive/OWASP_Application_Security_Verification_Standard_3.0.1_PL.pdf)
 
 ## Znakowanie tłumaczeń wątpliwych
-- Znakowanie kłopotliwych tłumaczenia **zagadnienia** odbywa się za pomocą dodawania ciągu znaków "-\*-" na końcu kłopotliwego podpunktu / zagadnienia MASVS.
+- Znakowanie kłopotliwego tłumaczenia **zagadnienia** odbywa się za pomocą dodawania ciągu znaków "-\*-" na końcu kłopotliwego podpunktu / zagadnienia MASVS.
 - Znakowanie kłopotliwego tłumaczenia **słownictwa** odbywa się poprzez zapisanie go w pliku "Kluczowe_problematyczne_słownictwo.md"
 
 
