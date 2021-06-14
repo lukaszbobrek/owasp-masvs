@@ -8,3 +8,12 @@
 ## Znakowanie tłumaczeń wątpliwych
 - Znakowanie kłopotliwych tłumaczenia **zagadnienia** odbywa się za pomocą dodawania ciągu znaków "-\*-" na końcu kłopotliwego podpunktu / zagadnienia MASVS.
 - Znakowanie kłopotliwego tłumaczenia **słownictwa** odbywa się poprzez zapisanie go w pliku "Kluczowe_problematyczne_słownictwo.md"
+
+
+## TODO
+### Faza 1:
+- [ ] Przetłumaczenie każdej strony MASVS
+- [ ] Robienie poprawek w razie potrzeby
+### Faza 2
+- [ ] Skupienie się na robieniu poprawek
+- [ ] Ujednolicić nagłówki (Pomocne będzie spojrzenie na spis treści.)
