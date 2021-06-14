@@ -1,4 +1,4 @@
-# V2: Przechowywanie danych i wymagania dotyczące prywatności
+# V2: Przechowywanie Danych i Wymagania Dotyczące Prywatności
 
 ## Cele Kontrolne
 
@@ -36,7 +36,7 @@ Zdecydowanej większości problemów z ujawnianiem danych można zapobiec, przes
 | **2.14** | MSTG-STORAGE-14 | Jeśli poufne dane nadal muszą być przechowywane lokalnie, należy je zaszyfrować przy użyciu klucza pochodzącego ze sprzętowej pamięci masowej, która wymaga uwierzytelniania - np. z TEE (Trusted Execution Environment) |  | x |
 | **2.15** | MSTG-STORAGE-15 | Pamięć lokalna aplikacji powinna zostać wyczyszczona po nadmiernej liczbie nieudanych prób uwierzytelnienia. |  | x |
 
-## References
+## Bibliografia
 
 Przewodnik testowania zabezpieczeń mobilnych OWASP zawiera szczegółowe instrukcje dotyczące weryfikacji wymagań wymienionych w tej sekcji.
 

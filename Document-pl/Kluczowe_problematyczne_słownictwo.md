@@ -18,3 +18,7 @@ functional and security roles
 software development lifecycle - ciągły cykl rozwoju oprogramowania
 responsible disclosure policy - Program odpowiedzialnego zgłaszania podatności
 compliance - zgodność ustawawami prawnymi
+system credential storage facilities - systemy przechowywania danych uwierzytelniających.
+stateful - stanowo
+keychain/keystore - keychain/keystore
+view contextual information - przeglądać informacje kontekstowe

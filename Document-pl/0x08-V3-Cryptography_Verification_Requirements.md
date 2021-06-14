@@ -1,6 +1,6 @@
-# V3: Cryptography Requirements
+# V3: Wymagania dotyczące Kryptografii
 
-## Control Objective
+## Cele Kontrolne
 
 Kryptografia jest niezbędnym elementem ochrony danych przechowywanych na urządzeniu mobilnym. Jest to również kategoria, w której sprawy mogą pójść strasznie źle, zwłaszcza gdy nie są przestrzegane standardowe konwencje. Celem kontroli w tym rozdziale jest zapewnienie, że zweryfikowana aplikacja korzysta z kryptografii zgodnie z najlepszymi praktykami branżowymi, w tym:
 
