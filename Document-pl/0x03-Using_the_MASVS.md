@@ -38,7 +38,7 @@ MASVS-L2 wprowadza zaawansowane kontrole bezpieczeństwa, które wykraczają poz
 
 #### MASVS-R: Niezawodność przeciwko Inżynierii Wstecznej i Fałszowania
 
-Aplikacja ma najnowocześniejsze zabezpieczenia, a także jest odporna na określone, jasno zdefiniowane ataki po stronie klienckiej, takie jak fałszowanie, modowanie lub inżynieria wsteczna w celu wydobycia wrażliwego kodu lub danych. Taka aplikacja wykorzystuje funkcje zabezpieczeń sprzętowych lub wystarczająco silne i weryfikowalne techniki ochrony dzięki oprogramowaniu. MASVS-R ma zastosowanie do aplikacji, które obsługują bardzo wrażliwe dane i może służyć jako środek ochrony własności intelektualnej lub zabezpieczenia aplikacji przed sfałszowaniem.
+Aplikacja ma najnowocześniejsze zabezpieczenia, a także jest odporna na określone, jasno zdefiniowane ataki po stronie klienckiej, takie jak fałszowanie, modowanie lub inżynieria wsteczna w celu wydobycia wrażliwego kodu lub danych. Taka aplikacja wykorzystuje funkcje zabezpieczeń sprzętowych lub wystarczająco silne i weryfikowalne techniki ochrony dzięki oprogramowaniu. MASVS-R ma zastosowanie do aplikacji, które obsługują bardzo wrażliwe dane i może służyć jako środek ochrony własności intelektualnej lub zabezpieczenia aplikacji przed manipulacją kodu.
 
 ### Zalecane Użycie
 
@@ -52,7 +52,7 @@ Podsumowując, dostępne są następujące rodzaje weryfikacji:
 - MASVS-L2
 - MASVS-L2+R
 
-Różne kombinacje odzwierciedlają różne stopnie bezpieczeństwa i odporności. Celem jest zapewnienie elastyczności: na przykład gra mobilna może nie uzasadniać dodawania kontroli bezpieczeństwa MASVS-L2, takich jak uwierzytelnianie dwuskładnikowe, ze względu na użyteczność, ale ma silną potrzebę biznesową w zakresie zapobiegania sfałszowaniu.
+Różne kombinacje odzwierciedlają różne stopnie bezpieczeństwa i odporności. Celem jest zapewnienie elastyczności: na przykład gra mobilna może nie uzasadniać dodawania kontroli bezpieczeństwa MASVS-L2, takich jak uwierzytelnianie dwuskładnikowe, ze względu na użyteczność, ale ma silną potrzebę biznesową w zakresie zapobiegania manipulacji kodu.
 
 #### Który typ weryfikacji wybrać
 
@@ -74,13 +74,13 @@ Implementacja wymagań MASVS L2 zwiększa bezpieczeństwo, jednocześnie zwięks
 
 ###### MASVS L1+R
 
-- Aplikacje mobilne, w których ochrona własności intelektualnej (IP) jest celem biznesowym. Kontrole odporności wymienione w MASVS-R można wykorzystać do zwiększenia wysiłku potrzebnego do uzyskania oryginalnego kodu źródłowego i utrudnienia manipulacji / crackingu.
+- Aplikacje mobilne, w których ochrona własności intelektualnej (IP) jest celem biznesowym. Kontrole odporności wymienione w MASVS-R można wykorzystać do zwiększenia wysiłku potrzebnego do uzyskania oryginalnego kodu źródłowego i utrudnienia manipulacji kodu / crackingu.
 
 - Branża gier: Gry, w których niezbędna jest ochrona przed modyfikacją i oszustwami, takie jak konkurencyjne gry online. Oszukiwanie jest ważnym problemem w grach online, ponieważ duża liczba oszustów prowadzi do niezadowolonych graczy i może ostatecznie spowodować niepowodzenie gry. MASVS-R zapewnia podstawowe kontrole zapobiegające manipulacjom kodu, aby pomóc zwiększyć wysiłek oszustów.
 
 ###### MASVS L2+R
 
-- Branża finansowa: aplikacje bankowości internetowej, które umożliwiają użytkownikowi przenoszenie środków, w przypadku których techniki, takie jak wstrzykiwanie kodu i instrumentacji na zhakowanych urządzeniach, stanowią ryzyko. W takim przypadku kontrole z MASVS-R mogą zostać użyte do utrudnienia manipulacji, podnosząc poprzeczkę dla autorów złośliwego oprogramowania.
+- Branża finansowa: aplikacje bankowości internetowej, które umożliwiają użytkownikowi przenoszenie środków, w przypadku których techniki, takie jak wstrzykiwanie kodu i instrumentacji na zhakowanych urządzeniach, stanowią ryzyko. W takim przypadku kontrole z MASVS-R mogą zostać użyte do utrudnienia manipulacji kodu, podnosząc poprzeczkę dla autorów złośliwego oprogramowania.
 
 - Wszystkie aplikacje mobilne, które z założenia muszą przechowywać wrażliwe dane na urządzeniu mobilnym, a jednocześnie muszą obsługiwać szeroką gamę urządzeń i wersji systemów operacyjnych. W takim przypadku kontrole dla niezawodności mogą być wykorzystywane jako obrona wielowarstwowa, aby zwiększyć wysiłek atakujących, którzy chcą wydobyć poufne dane.
 

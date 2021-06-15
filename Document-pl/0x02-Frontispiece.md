@@ -43,7 +43,7 @@ Copyright © 2021 The OWASP Foundation. This work is licensed under a [Creative 
 | Portuguese | Ana Filipa Mota, Fernando Nogueira, Filipa Gomes, Luis Fontes, Sónia Dias|
 | Russian | Gall Maxim, Eugen Martynov, Chelnokov Vladislav (Review), Oprya Egor (Review), Tereshin Dmitry (Review) |
 | Spanish | Martin Marsicano, Carlos Holguera |
-| Polish | Bartlomiej Mokrzycki |
+| Polish | Bartlomiej Mokrzycki, Lukasz Bobrek, Lukasz Wierzbicki |
 
 Ten dokument rozpoczął się jako fork projektu OWASP Application Security Verification Standard, napisanego przez Jim Manico.
 

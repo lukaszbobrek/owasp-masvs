@@ -5,7 +5,7 @@
 security controls - kontrole bezpieczeństwa (?)
 software protection controls - kontrole bezpieczeństwa poprzez oprogramowanie
 controls - kontrole; kontrole dla [...]
-tampering - sfałszowanie / naruszenie kodu
+tampering - sfałszowanie / manipulacja kodu
 resiliency - niezawodność
 extract - wydobyć
 retrieve - wydobyć
