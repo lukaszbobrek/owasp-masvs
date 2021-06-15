@@ -22,3 +22,4 @@
 - stateful - stanowo
 - keychain/keystore - keychain/keystore
 - view contextual information - przeglądać informacje kontekstowe
+- facilities - komponentów

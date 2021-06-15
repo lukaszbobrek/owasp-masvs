@@ -10,24 +10,24 @@ Kontrole w tej grupie zapewniają, że aplikacja korzysta z interfejsów API pla
 | -- | ---------- | ---------------------- | - | - |
 | **6.1** | MSTG-PLATFORM-1 | Aplikacja żąda tylko minimalnego zestawu niezbędnych uprawnień. | x | x |
 | **6.2** | MSTG-PLATFORM-2 | Wszystkie dane wejściowe ze źródeł zewnętrznych i użytkownika są sprawdzane i w razie potrzeby oczyszczane. Obejmuje to dane otrzymane za pośrednictwem UI, mechanizmów IPC takich jak Intents, niestandardowych URL, oraz ze źródeł sieciowych.| x | x |
-| **6.3** | MSTG-PLATFORM-3 | The app does not export sensitive functionality via custom URL schemes, unless these mechanisms are properly protected. | x | x |
-| **6.4** | MSTG-PLATFORM-4 | The app does not export sensitive functionality through IPC facilities, unless these mechanisms are properly protected. | x | x |
-| **6.5** | MSTG-PLATFORM-5 | JavaScript is disabled in WebViews unless explicitly required. | x | x |
-| **6.6** | MSTG-PLATFORM-6 | WebViews are configured to allow only the minimum set of protocol handlers required (ideally, only https is supported). Potentially dangerous handlers, such as file, tel and app-id, are disabled. | x | x |
-| **6.7** | MSTG-PLATFORM-7 | If native methods of the app are exposed to a WebView, verify that the WebView only renders JavaScript contained within the app package. | x | x |
-| **6.8** | MSTG-PLATFORM-8 | Object deserialization, if any, is implemented using safe serialization APIs. | x | x |
-| **6.9** | MSTG-PLATFORM-9 | The app protects itself against screen overlay attacks. (Android only) |  | x |
-| **6.10** | MSTG-PLATFORM-10 | A WebView's cache, storage, and loaded resources (JavaScript, etc.) should be cleared before the WebView is destroyed. |  | x |
-| **6.11** | MSTG-PLATFORM-11 | Verify that the app prevents usage of custom third-party keyboards whenever sensitive data is entered (iOS only). | | x |
+| **6.3** | MSTG-PLATFORM-3 | Aplikacja nie eksportuje wrażliwych funkcji za pośrednictwem niestandardowych URL schemes, chyba że te mechanizmy są odpowiednio chronione. | x | x |
+| **6.4** | MSTG-PLATFORM-4 | Aplikacja nie eksportuje wrażliwych funkcji za pośrednictwem komponentów IPC, chyba że mechanizmy te są odpowiednio chronione. | x | x |
+| **6.5** | MSTG-PLATFORM-5 | JavaScript jest wyłączony w WebViews, chyba że jest to wyraźnie wymagane. | x | x |
+| **6.6** | MSTG-PLATFORM-6 | WebView są skonfigurowane tak, aby zezwalały tylko na minimalny zestaw obsługiwanych protokołów (najlepiej by wspierał jedynie HTTPS). Potencjalnie niebezpieczne protokoły takie jak: file, tel oraz app-id nie powinny być obsługiwane | x | x |
+| **6.7** | MSTG-PLATFORM-7 | Jeśli natywne metody aplikacji są udostępniane dla WebView, sprawdź, czy WebView renderuje jedynie kod JavaScript zawarty w paczce aplikacji. | x | x |
+| **6.8** | MSTG-PLATFORM-8 | Deserializacja obiektu, jeśli istnieje, jest implementowana przy użyciu bezpiecznych interfejsów API dla serializacji. | x | x |
+| **6.9** | MSTG-PLATFORM-9 | Aplikacja zabezpiecza się przed atakami nakładek ekranowych (screen overlay attacks). (tylko Android) |  | x |
+| **6.10** | MSTG-PLATFORM-10 | Pamięć podręczna, zwykła pamięć i załadowane zasoby dla WebView (JavaScript itp.) powinny zostać wyczyszczone przed zniszczeniem WebView. |  | x |
+| **6.11** | MSTG-PLATFORM-11 | Sprawdź, czy aplikacja uniemożliwia korzystanie z niestandardowych klawiatur innych firm za każdym razem, gdy wprowadzane są poufne dane (tylko iOS). | | x |
 
-## References
+## Bibliografia
 
-The OWASP Mobile Security Testing Guide provides detailed instructions for verifying the requirements listed in this section.
+Przewodnik testowania zabezpieczeń mobilnych OWASP zawiera szczegółowe instrukcje dotyczące weryfikacji wymagań wymienionych w tej sekcji.
 
 - Android: Testing Platform Interaction - <https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05h-Testing-Platform-Interaction.md>
 - iOS: Testing Platform Interaction - <https://github.com/OWASP/owasp-mstg/blob/master/Document/0x06h-Testing-Platform-Interaction.md>
 
-For more information, see also:
+Aby uzyskać więcej informacji, zobacz także:
 
 - OWASP Mobile Top 10: M1 (Improper Platform Usage) - <https://owasp.org/www-project-mobile-top-10/2016-risks/m1-improper-platform-usage>
 - OWASP Mobile Top 10: M7 (Poor Code Quality) - <https://owasp.org/www-project-mobile-top-10/2016-risks/m7-client-code-quality>
