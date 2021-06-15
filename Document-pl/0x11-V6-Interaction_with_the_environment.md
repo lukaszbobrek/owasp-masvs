@@ -2,7 +2,7 @@
 
 ## Cele Kontrolne
 
-Kontrole w tej grupie zapewniają, że aplikacja korzysta z interfejsów API platformy i standardowych komponentów w bezpieczny sposób. Ponadto kontrole obejmują komunikację między aplikacjami (IPC).
+Kontrole w tej grupie zapewniają, że aplikacja korzysta z interfejsów API platformy i standardowych komponentów w bezpieczny sposób. Ponadto kontrole obejmują komunikację między procesami aplikacji (IPC).
 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
@@ -11,7 +11,7 @@ Kontrole w tej grupie zapewniają, że aplikacja korzysta z interfejsów API pla
 | **6.1** | MSTG-PLATFORM-1 | Aplikacja żąda tylko minimalnego zestawu niezbędnych uprawnień. | x | x |
 | **6.2** | MSTG-PLATFORM-2 | Wszystkie dane wejściowe ze źródeł zewnętrznych i użytkownika są sprawdzane i w razie potrzeby oczyszczane. Obejmuje to dane otrzymane za pośrednictwem UI, mechanizmów IPC takich jak Intents, niestandardowych URL, oraz ze źródeł sieciowych.| x | x |
 | **6.3** | MSTG-PLATFORM-3 | Aplikacja nie eksportuje wrażliwych funkcji za pośrednictwem niestandardowych URL schemes, chyba że te mechanizmy są odpowiednio chronione. | x | x |
-| **6.4** | MSTG-PLATFORM-4 | Aplikacja nie eksportuje wrażliwych funkcji za pośrednictwem komponentów IPC, chyba że mechanizmy te są odpowiednio chronione. | x | x |
+| **6.4** | MSTG-PLATFORM-4 | Aplikacja nie eksportuje wrażliwych funkcji za pośrednictwem procesami IPC, chyba że mechanizmy te są odpowiednio chronione. | x | x |
 | **6.5** | MSTG-PLATFORM-5 | JavaScript jest wyłączony w WebViews, chyba że jest to wyraźnie wymagane. | x | x |
 | **6.6** | MSTG-PLATFORM-6 | WebView są skonfigurowane tak, aby zezwalały tylko na minimalny zestaw obsługiwanych protokołów (najlepiej by wspierał jedynie HTTPS). Potencjalnie niebezpieczne protokoły takie jak: file, tel oraz app-id nie powinny być obsługiwane | x | x |
 | **6.7** | MSTG-PLATFORM-7 | Jeśli natywne metody aplikacji są udostępniane dla WebView, sprawdź, czy WebView renderuje jedynie kod JavaScript zawarty w paczce aplikacji. | x | x |
