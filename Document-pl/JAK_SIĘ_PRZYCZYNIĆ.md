@@ -4,20 +4,21 @@
 ## Dlaczego Warto?
 - Twoje imię i nazwisko/pseudonim będzie widoczne na paragrafie "Podziękowania" na rozdziale "Frontipiece.md"
 - Świetna okazja do poznania nowych ludzi, networkingu
-- Zaznajomienie się ze standardzem MASVS
+- Zaznajomienie się ze standardem MASVS
 - Uczestnictwo w projekcie Open-Source jest doceniane przez pracodawców, więc jest to dobry wpis do CV :)
 - I wiele innych plusów które się zauważy dopiero po pewnym czasie :)
 
 ## Jak się przyczynić
+**Nie musisz znać języka angielskiego, a nieznajomość tego języka może nawet być plusem** - Próbując z języka angielskiego na język polski, bardzo często tracimy perspektywę, czy dane zdanie ma sens w języku polskim. Wystarczy, że przejrzysz daną stronę i sprawisz, że tekst będzie bardziej spójny
 
-### Robiąc Pull Requesty z poprawkami gramtycznymi, językowymi.
+
+**Istnieje ogromna ilość byków językowych, jest wiele pracy w poprawianiu ich i każda pomoc będzie doceniona**, taka jak:
+- Robiąc Pull Requesty z poprawkami gramtycznymi, językowymi.
+- Dając rady, pomagać w optymalizacji workflow tłumaczenia
+### Robienie Pull Requestów z poprawkami gramatycznymi, językowymi.
 Pull Requesty są jedną z najlepszych możliwości, by przyczynić się do rozwoju projektu.
 
-**Istnieje ogromna ilość byków językowych, jest wiele pracy w poprawianiu ich i każdy Pull Request będzie doceniony :)**
-
 **Czym są Pull-Reqeusty?** - Nie ma lepszego sposobu według mnie niż zapoznanie się z tym [Oto Odcinkiem Kursu](https://youtu.be/bKw94CcIct8), oraz zrealizować działania zawarte tj. fork'owanie na nawet tym repozytorium :)
-
-### Dając rady, pomagać w optymalizacji workflow tłumaczenia
 
 ## Jak skonfigurować środowisko.
 
