@@ -9,7 +9,7 @@
 - I wiele innych plusów które się zauważy dopiero po pewnym czasie :)
 
 ## Jak się przyczynić
-**Nie musisz znać języka angielskiego, a nieznajomość tego języka może nawet być plusem** - Próbując z języka angielskiego na język polski, bardzo często tracimy perspektywę, czy dane zdanie ma sens w języku polskim. Wystarczy, że przejrzysz daną stronę i sprawisz, że tekst będzie bardziej spójny
+**Nie musisz znać języka angielskiego, a nieznajomość tego języka może nawet być plusem** - Próbując przetłumaczyć z języka angielskiego na język polski, bardzo często tracimy sens, poprawność w języku polskim. Wystarczy, że przejrzysz daną stronę i sprawisz, że tekst będzie bardziej spójny, poprawny językowo
 
 
 **Istnieje ogromna ilość byków językowych, jest wiele pracy w poprawianiu ich i każda pomoc będzie doceniona**, taka jak:
