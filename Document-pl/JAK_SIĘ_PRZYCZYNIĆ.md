@@ -1,6 +1,13 @@
 # THIS FILE IS ONLY TO AID TRANSLATORS, AND SHOULDN'T BE PUBLISHED
 # Przyczynianie się
 
+## Dlaczego Warto?
+- Twoje imię i nazwisko/pseudonim będzie widoczne na paragrafie "Podziękowania" na rozdziale "Frontipiece.md"
+- Świetna okazja do poznania nowych ludzi, networkingu
+- Zaznajomienie się ze standardzem MASVS
+- Uczestnictwo w projekcie Open-Source jest doceniane przez pracodawców, więc jest to dobry wpis do CV :)
+- I wiele innych plusów które się zauważy dopiero po pewnym czasie :)
+
 ## Jak się przyczynić
 
 ### Robiąc Pull Requesty z poprawkami gramtycznymi, językowymi.
