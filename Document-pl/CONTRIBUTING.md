@@ -1,3 +1,4 @@
+# THIS FILE IS ONLY TO AID TRANSLATORS, AND SHOULDN'T BE PUBLISHED
 # Przyczynianie się
 
 ## Jak się przyczynić
@@ -33,13 +34,28 @@ Pull Requesty są jednym z najlepszych możliwości, by przyczynić się do rozw
 
 ![Krok-b3](https://i.imgur.com/lCcO9Gx.png)
 
-
-
 ### Edytowanie w innym edytorze tekstowym
-- Jest dość skomplikowanym procesem, dla kogoś kto nie jest zaznajomiony z worflow GitHuba
+- Jest dość skomplikowanym procesem dla kogoś kto nie jest zaznajomiony z worflow GitHuba
 - Polecam obejrzeć kilka odcinków kursu, i spróbować odwzorowywać to co jest pokazywane na swoim środowisku
 
 
 ## Uwaga dotycząca tabel
 
 Aby upewnić się, że tabele wyglądają ładnie, korzystamy z postaci Unicode `U + 00A0`, aby poprawnie sformatować tabele. Jeśli chcesz przetłumaczyć tabelę: wystarczy skopiować ją i zmienić zawartość, ale niech "spacje końcowe" pozostaną nietknięte. Podobnie podczas dodawania nowego wymagania: po prostu skopiuj ostatni wymóg w tabeli i zmień zawartość dla nowego wymogu.
+
+## Zalecamy wzorowanie się na tłumaczeniu starszej, Polskiej wersji ASVS 
+[Starsza, polska wersja ASVS](https://owasp.org/www-pdf-archive/OWASP_Application_Security_Verification_Standard_3.0.1_PL.pdf)
+
+**W szczególności jeśli chodzi o nagłówki** - struktura dokumentu MASVS jest bardzo podobna do struktury ASVS. Należy jednak pamiętać, by **zawsze sugerować się najpierw MASVS**
+
+## TODO
+### Faza 1:
+- [ ] Przetłumaczenie każdej strony MASVS
+- [ ] Robienie poprawek w razie potrzeby
+### Faza 2
+- [ ] Skupienie się na robieniu poprawek
+- [ ] Ujednolicić nagłówki (Pomocne będzie spojrzenie na spis treści.)
+
+## Znakowanie tłumaczeń wątpliwych
+- Znakowanie kłopotliwego tłumaczenia **zagadnienia** odbywa się za pomocą dodawania ciągu znaków "-\*-" na końcu kłopotliwego podpunktu / zagadnienia MASVS.
+- Znakowanie kłopotliwego tłumaczenia **słownictwa** odbywa się poprzez zapisanie go w pliku "Kluczowe_problematyczne_słownictwo.md"
