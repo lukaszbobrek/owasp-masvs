@@ -1,4 +1,7 @@
 # THIS FILE IS ONLY TO AID TRANSLATORS, AND SHOULDN'T BE PUBLISHED
+![image](https://user-images.githubusercontent.com/32965886/122207768-c5978f00-cea2-11eb-9b90-02179ec5da54.png)
+
+
 # Przyczynianie się
 
 ## Dlaczego Warto?
