@@ -3,10 +3,14 @@
 
 ## Jak się przyczynić
 
+### Robiąc Pull Requesty z poprawkami gramtycznymi, językowymi.
+Pull Requesty są jedną z najlepszych możliwości, by przyczynić się do rozwoju projektu.
 
-Pull Requesty są jednym z najlepszych możliwości, by przyczynić się do rozwoju projektu.
+**Istnieje ogromna ilość byków językowych, jest wiele pracy w poprawianiu ich i każdy Pull Request będzie doceniony :)**
 
 **Czym są Pull-Reqeusty?** - Nie ma lepszego sposobu według mnie niż zapoznanie się z tym [Oto Odcinkiem Kursu](https://youtu.be/bKw94CcIct8), oraz zrealizować działania zawarte tj. fork'owanie na nawet tym repozytorium :)
+
+### Dając rady, pomagać w optymalizacji workflow tłumaczenia
 
 ## Jak skonfigurować środowisko.
 
@@ -24,7 +28,7 @@ Pull Requesty są jednym z najlepszych możliwości, by przyczynić się do rozw
 
 ![Krok-3](https://i.imgur.com/16MAolG.png)
 
-![Krok-4](https://i.imgur.com/SwiMWDN.png)
+![Krok-4](https://i.imgur.com/K00iLqQ.png)
 
 ### Pull Request za pomocą GitHub'a
 
@@ -49,13 +53,7 @@ Aby upewnić się, że tabele wyglądają ładnie, korzystamy z postaci Unicode 
 **W szczególności jeśli chodzi o nagłówki** - struktura dokumentu MASVS jest bardzo podobna do struktury ASVS. Należy jednak pamiętać, by **zawsze sugerować się najpierw MASVS**
 
 ## TODO
-### Faza 1:
-- [ ] Przetłumaczenie każdej strony MASVS
-- [ ] Robienie poprawek w razie potrzeby
-### Faza 2
-- [ ] Skupienie się na robieniu poprawek
-- [ ] Ujednolicić nagłówki (Pomocne będzie spojrzenie na spis treści.)
+[TODO](https://github.com/Cloufish/owasp-masvs/blob/master/Document-pl/TODO.md)
 
 ## Znakowanie tłumaczeń wątpliwych
-- Znakowanie kłopotliwego tłumaczenia **zagadnienia** odbywa się za pomocą dodawania ciągu znaków "-\*-" na końcu kłopotliwego podpunktu / zagadnienia MASVS.
 - Znakowanie kłopotliwego tłumaczenia **słownictwa** odbywa się poprzez zapisanie go w pliku "Kluczowe_problematyczne_słownictwo.md"
