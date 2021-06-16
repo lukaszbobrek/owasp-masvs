@@ -2,7 +2,7 @@
 # Przyczynianie się
 
 ## Dlaczego Warto?
-- Twoje imię i nazwisko/pseudonim będzie widoczne na paragrafie "Podziękowania" na rozdziale "Frontipiece.md"
+- Dla najbardziej aktywnych - Twoje imię i nazwisko/pseudonim będzie widoczne na paragrafie "Podziękowania" w rozdziale "Frontipiece.md"
 - Świetna okazja do poznania nowych ludzi, networkingu
 - Zaznajomienie się ze standardem MASVS
 - Uczestnictwo w projekcie Open-Source jest doceniane przez pracodawców, więc jest to dobry wpis do CV :)
@@ -14,7 +14,7 @@
 
 **Istnieje ogromna ilość byków językowych, jest wiele pracy w poprawianiu ich i każda pomoc będzie doceniona**, taka jak:
 - Robiąc Pull Requesty z poprawkami gramtycznymi, językowymi.
-- Dając rady, pomagać w optymalizacji workflow tłumaczenia
+- Dając rady, pomagać w optymalizacji workflow/procesu tłumaczenia
 ### Robienie Pull Requestów z poprawkami gramatycznymi, językowymi.
 Pull Requesty są jedną z najlepszych możliwości, by przyczynić się do rozwoju projektu.
 
