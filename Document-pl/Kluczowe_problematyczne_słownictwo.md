@@ -6,7 +6,7 @@
 - software protection controls - kontrole bezpieczeństwa poprzez oprogramowanie
 - controls - kontrole; kontrole dla [...]
 - tampering - sfałszowanie / naruszenie kodu
-- resiliency - niezawodność
+- resiliency - niezawodność /odporność
 - extract - wydobyć
 - retrieve - wydobyć
 - Trust Marks - Oznaczeń zaufania
@@ -23,3 +23,5 @@
 - keychain/keystore - keychain/keystore
 - view contextual information - przeglądać informacje kontekstowe
 - facilities - komponentów
+- code-lift - code-lift
+- device fingerprint - sygnatura urządzenia

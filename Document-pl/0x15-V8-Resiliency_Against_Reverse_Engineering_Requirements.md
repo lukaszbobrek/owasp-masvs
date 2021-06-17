@@ -1,70 +1,70 @@
-# V8: Resilience Requirements
+# V8: Wymagania dotyczące Niezawodności
 
-## Control Objective
+## Cele Kontrolne
 
-This section covers defense-in-depth measures recommended for apps that process, or give access to, sensitive data or functionality. Lack of any of these controls does not cause a vulnerability - instead, they are meant to increase the app's resilience against reverse engineering and specific client-side attacks.
+W tej sekcji omówiono szczegółowe środki ochrony zalecane w przypadku aplikacji, które przetwarzają wrażliwe dane lub funkcje bądź umożliwiają dostęp do nich. Brak którejkolwiek z tych kontroli nie powoduje powstania luki w zabezpieczeniach — zamiast tego mają one na celu zwiększenie odporności aplikacji na inżynierię wsteczną i określone ataki po stronie klienckiej.
 
-The controls in this section should be applied as needed, based on an assessment of the risks caused by unauthorized tampering with the app and/or reverse engineering of the code. We suggest consulting the OWASP document "Technical Risks of Reverse Engineering and Unauthorized Code Modification Reverse Engineering and Code Modification Prevention" (see references below) for a list of business risks as well as associated technical threats.
+Kontrole w tej sekcji należy stosować w razie potrzeby na podstawie oceny ryzyka spowodowanego nieautoryzowaną manipulacją kodu aplikacji i/lub inżynierią wsteczną kodu. Sugerujemy zapoznanie się z dokumentem OWASP „Technical Risks of Reverse Engineering and Unauthorized Code Modification Reverse Engineering and Code Modification Prevention” (patrz odnośniki poniżej) w celu uzyskania listy ryzyk biznesowych oraz powiązanych zagrożeń technicznych.
 
-For any of the controls in the list below to be effective, the app must fulfil at least all of MASVS-L1 (i.e., solid security controls must be in place), as well as all lower-numbered requirements in V8. For examples, the obfuscation controls listed in under "impede comprehension" must be combined with "impede dynamic analysis and tampering" and "device binding".
+Aby którakolwiek z kontroli z poniższej listy była skuteczna, aplikacja musi spełniać co najmniej wszystkie wymagania MASVS-L1 (tj. muszą istnieć solidne kontrole bezpieczeństwa), a także wszystkie wymagania o niższych numerach w V8. Na przykład, kontrole obfuskacji wymienione w punkcie „Utrudnianie Zrozumienia” muszą być połączone z „Utrudnianie Analizy Dynamicznej i Manipulacji Kodu” i „Wiązanie Urządzenia (Device Binding)”.
 
-**Note that software protections must never be used as a replacement for security controls. The controls listed in MASVR-R are intended to add threat-specific, additional protective controls to apps that also fulfil the MASVS security requirements.**
+**Należy pamiętać, że ochrony oprogramowania nigdy nie wolno używać jako zamiennika kontroli bezpieczeństwa. Kontrole wymienione w MASVR-R mają na celu dodanie specyficznych dla zagrożeń, dodatkowych kontroli ochronnych do aplikacji, które również spełniają wymagania bezpieczeństwa MASVS.**
 
-The following considerations apply:
+Obowiązują następujące względy:
 
-1. A threat model must be defined that clearly outlines the client-side threats that are to be defended. Additionally, the grade of protection the scheme is meant to provide must be specified. For example, a stated goal could be to force authors of targeted malware seeking to instrument the app to invest significant manual reverse engineering effort.
+1. Należy zdefiniować model zagrożeń, który jasno określa zagrożenia po stronie klienckiej, przed którymi się bronimy. Ponadto należy określić stopień ochrony, jaki ma zapewniać system. Na przykład określonym celem może być zmuszenie autorów ukierunkowanego złośliwego oprogramowania, które chcą podszyć się pod aplikację, do zainwestowania znacznego wysiłku w ręczną inżynierię wsteczną.
 
-2. The threat model must be credible and relevant. For example, hiding a cryptographic key in a white-box implementation might prove redundant if an attacker can simply code-lift the white-box as a whole.
+2. Model zagrożenia musi być wiarygodny i odpowiedni. Na przykład ukrywanie klucza kryptograficznego w implementacji white-box może okazać się zbędne, jeśli atakujący może po prostu dokonać code-lift white-box. *-*
 
-3. The effectiveness of the protection should always be verified by a human expert with experience in testing the particular types of anti-tampering and obfuscation used (see also the "reverse engineering" and "assessing software protections" chapters in the Mobile Security Testing Guide).
-
-<!-- \pagebreak -->
-
-### Impede Dynamic Analysis and Tampering
-
-| # | MSTG-ID | Description | R |
-| -- | ----------- | ---------------------- | - |
-| **8.1** | MSTG-RESILIENCE-1 | The app detects, and responds to, the presence of a rooted or jailbroken device either by alerting the user or terminating the app. | x |
-| **8.2** | MSTG-RESILIENCE-2 | The app prevents debugging and/or detects, and responds to, a debugger being attached. All available debugging protocols must be covered. | x |
-| **8.3** | MSTG-RESILIENCE-3 | The app detects, and responds to, tampering with executable files and critical data within its own sandbox. | x |
-| **8.4** | MSTG-RESILIENCE-4 | The app detects, and responds to, the presence of widely used reverse engineering tools and frameworks on the device.| x |
-| **8.5** | MSTG-RESILIENCE-5 | The app detects, and responds to, being run in an emulator.  | x |
-| **8.6** | MSTG-RESILIENCE-6 | The app detects, and responds to, tampering the code and data in its own memory space. | x |
-| **8.7** | MSTG-RESILIENCE-7 | The app implements multiple mechanisms in each defense category (8.1 to 8.6). Note that resiliency scales with the amount, diversity of the originality of the mechanisms used. | x |
-| **8.8** | MSTG-RESILIENCE-8 | The detection mechanisms trigger responses of different types, including delayed and stealthy responses. | x |
-| **8.9** | MSTG-RESILIENCE-9 | Obfuscation is applied to programmatic defenses, which in turn impede de-obfuscation via dynamic analysis.  | x |
-
-### Device Binding
-
-| # | MSTG-ID | Description | R |
-| -- | ----------- | ---------------------- | - |
-| **8.10** | MSTG-RESILIENCE-10 | The app implements a 'device binding' functionality using a device fingerprint derived from multiple properties unique to the device. | x |
+3. Skuteczność ochrony powinna być zawsze weryfikowana przez eksperta posiadającego doświadczenie w testowaniu poszczególnych rodzajów stosowanych zabezpieczeń przed manipulacją kodu i obfuskacji (patrz także rozdziały „Inżynieria Wsteczna” i „Ocena Zabezpieczeń Oprogramowania” w Mobile Security Testing Guide).
 
 <!-- \pagebreak -->
 
-### Impede Comprehension
+### Utrudnianie Analizy Dynamicznej i Manipulacji Kodu
 
 | # | MSTG-ID | Description | R |
 | -- | ----------- | ---------------------- | - |
-| **8.11** | MSTG-RESILIENCE-11 |All executable files and libraries belonging to the app are either encrypted on the file level and/or important code and data segments inside the executables are encrypted or packed. Trivial static analysis does not reveal important code or data. | x |
-| **8.12** | MSTG-RESILIENCE-12 | If the goal of obfuscation is to protect sensitive computations, an obfuscation scheme is used that is both appropriate for the particular task and robust against manual and automated de-obfuscation methods, considering currently published research. The effectiveness of the obfuscation scheme must be verified through manual testing. Note that hardware-based isolation features are preferred over obfuscation whenever possible. | x |
+| **8.1** | MSTG-RESILIENCE-1 | Aplikacja wykrywa i reaguje na obecność zrootowanego  lub jailbreakowanego urządzenia, ostrzegając użytkownika lub zamykając aplikację. | x |
+| **8.2** | MSTG-RESILIENCE-2 | Aplikacja zapobiega debugowaniu i/lub wykrywa i odpowiada na dołączony debuger. Należy uwzględnić wszystkie dostępne protokoły debugowania. | x |
+| **8.3** | MSTG-RESILIENCE-3 | Aplikacja wykrywa i reaguje na manipulowanie plikami wykonywalnymi i krytycznymi danymi we własnym sandboxie. | x |
+| **8.4** | MSTG-RESILIENCE-4 | Aplikacja wykrywa i reaguje na obecność na urządzeniu szeroko stosowanych narzędzi i frameworków do inżynierii wstecznej.| x |
+| **8.5** | MSTG-RESILIENCE-5 | Aplikacja wykrywa i reaguje na działanie jej w emulatorze.  | x |
+| **8.6** | MSTG-RESILIENCE-6 | Aplikacja wykrywa i reaguje na manipulację kodem i danymi we własnej przestrzeni pamięci. | x |
+| **8.7** | MSTG-RESILIENCE-7 | Aplikacja implementuje wiele mechanizmów w każdej kategorii obrony (od 8.1 do 8.6). Zauważ, że niezawodność skaluje się wraz z ilością, różnorodnością oryginalnością zastosowanych mechanizmów. | x |
+| **8.8** | MSTG-RESILIENCE-8 | Mechanizmy wykrywania wywołują odpowiedzi różnego typu, w tym reakcje opóźnione i niejawne. | x |
+| **8.9** | MSTG-RESILIENCE-9 | Obfuskacja jest stosowana do obrony programowej, która z kolei utrudnia de-obfuskację za pomocą analizy dynamicznej.  | x |
 
-### Impede Eavesdropping
+### Wiązanie urządzenia (Device Binding)
 
 | # | MSTG-ID | Description | R |
 | -- | ----------- | ---------------------- | - |
-| **8.13** | MSTG-RESILIENCE-13 | As a defense in depth, next to having solid hardening of the communicating parties, application level payload encryption can be applied to further impede eavesdropping. | x |
+| **8.10** | MSTG-RESILIENCE-10 | Aplikacja implementuje funkcję „Wiązania Urządzenia” przy użyciu sygnatury urządzenia pochodzącego z wielu właściwości, metadanych unikalnych dla urządzenia. | x |
 
 <!-- \pagebreak -->
 
-## References
+### Utrudnianie Zrozumienia
 
-The OWASP Mobile Security Testing Guide provides detailed instructions for verifying the requirements listed in this section.
+| # | MSTG-ID | Description | R |
+| -- | ----------- | ---------------------- | - |
+| **8.11** | MSTG-RESILIENCE-11 | Wszystkie pliki wykonywalne i biblioteki należące do aplikacji są szyfrowane na poziomie plików i/lub ważne segmenty kodu i danych wewnątrz plików wykonywalnych są szyfrowane lub pakowane. Trywialna analiza statyczna nie ujawnia ważnego kodu ani danych. | x |
+| **8.12** | MSTG-RESILIENCE-12 | Jeśli celem obfuskacji jest ochrona wrażliwych obliczeń, stosuje się schemat obfuskacji, który jest zarówno odpowiedni dla konkretnego zadania, jak i odporny na ręczne i automatyczne metody de-obfuskacji, biorąc pod uwagę obecnie opublikowane badania. Skuteczność schematu obfuskacji należy zweryfikować za pomocą testów manualnych. Należy pamiętać, że w miarę możliwości preferowane są funkcje izolacji sprzętowej, a nie obfuskacji. | x |
+
+### Utrudnianie Podsłuchiwania
+
+| # | MSTG-ID | Description | R |
+| -- | ----------- | ---------------------- | - |
+| **8.13** | MSTG-RESILIENCE-13 | Jako dogłębną ochronę, oprócz solidnego zabezpieczenia stron komunikujących się, można zastosować szyfrowanie payloadu na poziomie aplikacji, aby jeszcze bardziej utrudnić podsłuchiwanie. | x |
+
+<!-- \pagebreak -->
+
+## Bibliografia
+
+Przewodnik testowania zabezpieczeń mobilnych OWASP zawiera szczegółowe instrukcje dotyczące weryfikacji wymagań wymienionych powyżej.
 
 - Android: Testing Resiliency Against Reverse Engineering - <https://github.com/OWASP/owasp-mstg/blob/master/Document/0x05j-Testing-Resiliency-Against-Reverse-Engineering.md>
 - iOS: Testing Resiliency Against Reverse Engineering - <https://github.com/OWASP/owasp-mstg/blob/master/Document/0x06j-Testing-Resiliency-Against-Reverse-Engineering.md>
 
-For more information, see also:
+Aby uzyskać więcej informacji, zobacz także:
 
 - OWASP Mobile Top 10: M8 (Code Tampering) - <https://owasp.org/www-project-mobile-top-10/2016-risks/m8-code-tampering>
 - OWASP Mobile Top 10: M9 (Reverse Engineering) - <https://owasp.org/www-project-mobile-top-10/2016-risks/m9-reverse-engineering>
