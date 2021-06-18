@@ -1,4 +1,4 @@
-# Appendix A: Słownika
+# Appendix A: Słownik
 
 - **Randomizacja Warstwy Przestrzeni Adresowej (Address Space Layout
 Randomization - ASLR)** – technika pomagająca chronić przed atakami przepełnienia
