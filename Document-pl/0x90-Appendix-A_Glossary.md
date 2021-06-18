@@ -81,7 +81,7 @@ używany jako odniesienie do zasobu.
 - **Środowisko testów akceptacyjnych użytkownika (User acceptance testing - UAT)** – środowisko testowe, które zachowuje się jak środowisko produkcyjne, w którym
 wszystkie testy oprogramowania przeprowadzane są przed rozpoczęciem wdrożenia
 na środowisku produkcyjnym.
-- **Weryfikator (Verifier)** – osoba lub zespół, który przeprowadza przegląd zgodności
+- **Weryfikator (Verifier)** – osoba lub zespół, która/y przeprowadza przegląd zgodności
 aplikacji zgodnie z wytycznymi standardu OWASP MASVS.
 - **Biała Lista (Whitelist)** – lista dozwolonych danych lub operacji, na przykład lista
 znaków, które są dozwolone podczas walidacji danych wejściowych.
