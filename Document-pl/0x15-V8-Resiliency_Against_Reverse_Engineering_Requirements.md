@@ -14,7 +14,7 @@ Obowiązują następujące względy:
 
 1. Należy zdefiniować model zagrożeń, który jasno określa zagrożenia po stronie klienckiej, przed którymi się bronimy. Ponadto należy określić stopień ochrony, jaki ma zapewniać system. Na przykład określonym celem może być zmuszenie autorów ukierunkowanego złośliwego oprogramowania, które chcą podszyć się pod aplikację, do zainwestowania znacznego wysiłku w ręczną inżynierię wsteczną.
 
-2. Model zagrożenia musi być wiarygodny i odpowiedni. Na przykład ukrywanie klucza kryptograficznego w implementacji white-box może okazać się zbędne, jeśli atakujący może po prostu dokonać code-lift white-box. *-*
+2. Model zagrożenia musi być wiarygodny i odpowiedni. Na przykład ukrywanie klucza kryptograficznego w implementacji white-box może okazać się zbędne, jeśli atakujący może po prostu dokonać code-liftu na white-boxie jako całości.
 
 3. Skuteczność ochrony powinna być zawsze weryfikowana przez eksperta posiadającego doświadczenie w testowaniu poszczególnych rodzajów stosowanych zabezpieczeń przed manipulacją kodu i obfuskacji (patrz także rozdziały „Inżynieria Wsteczna” i „Ocena Zabezpieczeń Oprogramowania” w Mobile Security Testing Guide).
 
@@ -32,7 +32,7 @@ Obowiązują następujące względy:
 | **8.6** | MSTG-RESILIENCE-6 | Aplikacja wykrywa i reaguje na manipulację kodem i danymi we własnej przestrzeni pamięci. | x |
 | **8.7** | MSTG-RESILIENCE-7 | Aplikacja implementuje wiele mechanizmów w każdej kategorii obrony (od 8.1 do 8.6). Zauważ, że niezawodność skaluje się wraz z ilością, różnorodnością oryginalnością zastosowanych mechanizmów. | x |
 | **8.8** | MSTG-RESILIENCE-8 | Mechanizmy wykrywania wywołują odpowiedzi różnego typu, w tym reakcje opóźnione i niejawne. | x |
-| **8.9** | MSTG-RESILIENCE-9 | Obfuskacja jest stosowana do obrony programowej, która z kolei utrudnia de-obfuskację za pomocą analizy dynamicznej.  | x |
+| **8.9** | MSTG-RESILIENCE-9 | Obfuskacja jest stosowana do obrony programowej, która z kolei utrudnia deobfuskację za pomocą analizy dynamicznej.  | x |
 
 ### Wiązanie urządzenia (Device Binding)
 
@@ -47,7 +47,7 @@ Obowiązują następujące względy:
 | # | MSTG-ID | Description | R |
 | -- | ----------- | ---------------------- | - |
 | **8.11** | MSTG-RESILIENCE-11 | Wszystkie pliki wykonywalne i biblioteki należące do aplikacji są szyfrowane na poziomie plików i/lub ważne segmenty kodu i danych wewnątrz plików wykonywalnych są szyfrowane lub pakowane. Trywialna analiza statyczna nie ujawnia ważnego kodu ani danych. | x |
-| **8.12** | MSTG-RESILIENCE-12 | Jeśli celem obfuskacji jest ochrona wrażliwych obliczeń, stosuje się schemat obfuskacji, który jest zarówno odpowiedni dla konkretnego zadania, jak i odporny na ręczne i automatyczne metody de-obfuskacji, biorąc pod uwagę obecnie opublikowane badania. Skuteczność schematu obfuskacji należy zweryfikować za pomocą testów manualnych. Należy pamiętać, że w miarę możliwości preferowane są funkcje izolacji sprzętowej, a nie obfuskacji. | x |
+| **8.12** | MSTG-RESILIENCE-12 | Jeśli celem obfuskacji jest ochrona wrażliwych obliczeń, stosuje się schemat obfuskacji, który jest zarówno odpowiedni dla konkretnego zadania, jak i odporny na ręczne i automatyczne metody deobfuskacji, biorąc pod uwagę obecnie opublikowane badania. Skuteczność schematu obfuskacji należy zweryfikować za pomocą testów manualnych. Należy pamiętać, że w miarę możliwości preferowane są funkcje izolacji sprzętowej, a nie obfuskacji. | x |
 
 ### Utrudnianie Podsłuchiwania
 
