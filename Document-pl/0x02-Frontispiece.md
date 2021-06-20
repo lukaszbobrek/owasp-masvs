@@ -3,15 +3,15 @@
 ![OWASP Logo](images/OWASP_logo.png)
 
 
-Przedstawiamy Standard Weryfikacji Bezpieczeństwa Aplikacji Mobilnych (Mobile Application Security Verification Standard MASVS).
-MASVS jest wysiłkiem społeczności w celu ustalenia struktury wymagań bezpieczeństwa potrzebnych w projektowaniu, rowijaniu i testowaniu bezpiecznych aplikacji mobilnych na systemach iOS oraz Android.
+Przedstawiamy Standard weryfikacji bezpieczeństwa aplikacji mobilnych (Mobile Application Security Verification Standard MASVS).
+MASVS to wysiłek społeczności w celu ustalenia struktury wymagań bezpieczeństwa potrzebnych w projektowaniu, rowijaniu i testowaniu bezpiecznych aplikacji mobilnych na systemach iOS oraz Android.
 
-MASVS to efekt kulminacyjny wysiłku społeczności OWASP oraz opinii branży. Spodziewamy się, że ten standard będzie się rozwijał wraz z biegiem czasu i przyjmiemy każdą uwagę od społeczności. 
+MASVS to efekt kulminacyjny wysiłku społeczności oraz opinii społeczności. Spodziewamy się, że ten standard będzie się rozwijał z biegiem czasu i pragniemy opinii od społeczności.
 
-Najlepszym sposobem na kontakt z nami jest kanał Projektu OWASP Mobile: <https://owasp.slack.com/messages/project-mobile_omtg/details/> .
+Najlepszym sposobem kontaktu z nami jest za pomocą kanału Projektu OWASP Mobile: <https://owasp.slack.com/messages/project-mobile_omtg/details/> .
 
 
-Konta mogą zostać założone pod następującym adresem URL: [https://owasp.slack.com/join/shared_invite/zt-g398htpy-AZ40HOM1WUOZguJKbblqkw#/](https://owasp.slack.com/join/shared_invite/zt-g398htpy-AZ40HOM1WUOZguJKbblqkw#/).
+Konta mogą zostać założone w następującym adresie URL: [https://owasp.slack.com/join/shared_invite/zt-g398htpy-AZ40HOM1WUOZguJKbblqkw#/](https://owasp.slack.com/join/shared_invite/zt-g398htpy-AZ40HOM1WUOZguJKbblqkw#/).
 
 ## Prawda Autorskie i Licencja
 
@@ -49,7 +49,7 @@ Ten dokument rozpoczął się jako fork projektu OWASP Application Security Veri
 
 ## Sponsorzy
 
-Podczas gdy MASVS jak i MSTG powstały i są utrzymywane przez społeczność dobrowolnie, czasami odrobina pomocy zewnętrznej jest potrzebna. Dziękujemy zatem naszym sponsorom za zapewnienie funduszy w celu możliwości zatrudnienia redaktorów technicznych. żwracamy uwagę, że sponsoring nie wpływa na zawartość MASVS oraz MSTG w jakikolwiek sposób.
+Podczas gdy MASVS jak i MSTG powstały i są zarządzane przez społeczność dobrowolnie, czasami trochę pomocy zewnętrznej jest potrzebnej. Zatem dziękujemy naszym sponsorom za zapewnienie funduszy w celu możliwości zatrudnienia technicznych redaktorów. Zwróćmy uwagę, że ich sponsoring nie wpływa na zawartość MASVS oraz MSTG w jakikolwiek sposób.
 Pakiety sponsorskie są opisane na stronie [OWASP Project Wiki](https://owasp.org/www-project-mobile-security-testing-guide/#div-sponsorship "OWASP Mobile Security Testing Guide Sponsorship Packages").
 
 ### Honorowy Dobroczyńca
@@ -60,4 +60,4 @@ Pakiety sponsorskie są opisane na stronie [OWASP Project Wiki](https://owasp.or
 
 [![Randorisec](images/Randorisec_logo.png)](https://www.randorisec.fr/)
 
-Chcemy również podziękować OWASP Bay Area Chapter za ich sponsoring. Na koniec chcielibyśmy podziękować każdemu kto zakupił ksiązkę z [Leanpub](https://leanpub.com/mobile-security-testing-guide) i zasponsorował nas w ten sposób.
+Również chcemy podziękować OWASP Bay Area Chapter za ich sponsoring. Na koniec chcielibyśmy podziękować każdemu kto zakupił ksiązkę z [Leanpub](https://leanpub.com/mobile-security-testing-guide) i zasponsorował nas w ten sposób.
