@@ -49,7 +49,7 @@ Ten dokument rozpoczął się jako fork projektu OWASP Application Security Veri
 
 ## Sponsorzy
 
-Podczas gdy MASVS jak i MSTG powstały i są utrzymywane przez społeczność dobrowolnie, czasami odrobina pomocy zewnętrznej jest potrzebna. Dziękujemy zatem naszym sponsorom za zapewnienie funduszy w celu możliwości zatrudnienia redaktorów technicznych. żwracamy uwagę, że sponsoring nie wpływa na zawartość MASVS oraz MSTG w jakikolwiek sposób.
+Podczas gdy MASVS jak i MSTG powstały i są utrzymywane przez społeczność dobrowolnie, czasami odrobina pomocy zewnętrznej jest potrzebna. Dziękujemy zatem naszym sponsorom za zapewnienie funduszy w celu możliwości zatrudnienia redaktorów technicznych. Zwracamy uwagę, że sponsoring nie wpływa na zawartość MASVS oraz MSTG w jakikolwiek sposób.
 Pakiety sponsorskie są opisane na stronie [OWASP Project Wiki](https://owasp.org/www-project-mobile-security-testing-guide/#div-sponsorship "OWASP Mobile Security Testing Guide Sponsorship Packages").
 
 ### Honorowy Dobroczyńca
