@@ -33,7 +33,7 @@ Zdecydowanej większości problemów dotyczących ujawnienia danych można zapob
 | **2.11** | MSTG-STORAGE-11 | Aplikacja weryfikuje czy urządzenie jest zabezpieczeone przed anonimowym dostępem, na przykład poprzez kod PIN lub biometrię. |  | x |
 | **2.12** | MSTG-STORAGE-12 | Aplikacja informuje użytkownika o sposobie przetwarzania danych osobowych, a także o najlepszych praktykach w zakresie bezpieczeństwa, których użytkownik powinien przestrzegać podczas korzystania z aplikacji. |  | x |
 | **2.13** | MSTG-STORAGE-13 | Dane wrażliwe nie powinny być przechowywane lokalnie na urządzeniu mobilnym. Zamiast tego, niezbędne dane powinny być pobierane z serwera i przechowywane wyłącznie w pamięci. |  | x |
-| **2.14** | MSTG-STORAGE-14 | Jeśli poufne dane muszą być przechowywane lokalnie, muszą być zaszyfrowane przy użyciu kluczy pochodzących z dedykowanego koprocesora, odseparowanego sprzętowo od systemu operacyjnego (KeyStore lub KeyChain). Operacje kryptograficzne muszą odbywać się w bezpiecznym środowisku TEE (ang. Trusted Execution Environment). | x |
+| **2.14** | MSTG-STORAGE-14 | Jeśli poufne dane muszą być przechowywane lokalnie, powinny być zaszyfrowane przy użyciu kluczy pochodzących z dedykowanego koprocesora, odseparowanego sprzętowo od systemu operacyjnego (KeyStore lub KeyChain). Operacje kryptograficzne muszą odbywać się w bezpiecznym środowisku TEE (ang. Trusted Execution Environment). | x |
 | **2.15** | MSTG-STORAGE-15 | Pamięć lokalna aplikacji powinna zostać wyczyszczona po nadmiernej liczbie nieudanych prób uwierzytelnienia. |  | x |
 
 ## Bibliografia
