@@ -2,15 +2,15 @@
 
 ## Cele
 
-Ochrona danych wrażliwych, takich jak dane uwierzytelniające oraz informacje poufne jest kluczowym elementem bezpieczeństwa urządzeń mobilnych. Po pierwsze, wrażliwe dane mogą zostać przypadkowo ujawnione innym aplikacjom działającym na tym samym urządzeniu, jeśli mechanizmy systemu operacyjnego, między innymi IPC, są wykorzystywane niewłaściwie. Dane mogą również być nieświadomie udostępniane do pamięci w chmurze, kopii zapasowych lub pamięci podręcznej klawiatury. Ponadto, w porównaniu z innymi typami urządzeń, smartfony są znacznie częściej gubione lub kradzione, co znacznei zwiększa ryzyko uzyskania fizycznego dostępu do urządzenia przez atakującego. Mając do na uwadze, dodatkowe zabezpieczenia mogą zostać wdrożone, w celu utrudnienia dostępu do wrażliwych danych.
+Ochrona danych wrażliwych, takich jak dane uwierzytelniające oraz informacje poufne jest kluczowym elementem bezpieczeństwa urządzeń mobilnych. Po pierwsze, wrażliwe dane mogą zostać przypadkowo ujawnione innym aplikacjom działającym na tym samym urządzeniu, jeśli mechanizmy systemu operacyjnego, między innymi IPC, są wykorzystywane niewłaściwie. Dane mogą również być nieświadomie udostępniane do pamięci w chmurze, kopii zapasowych lub pamięci podręcznej klawiatury. Ponadto, w porównaniu z innymi typami urządzeń, smartfony są znacznie częściej gubione lub kradzione, co znacznie zwiększa ryzyko uzyskania fizycznego dostępu do urządzenia przez atakującego. Mając do na uwadze, dodatkowe zabezpieczenia mogą zostać wdrożone, w celu utrudnienia dostępu do wrażliwych danych.
 
 Przypominamy, że MASVS opisuje zagadanienia związane z aplikacjami i nie obejmuje rozwiązań możliwych do wdrożenia na poziomie urządzenia, takich jak wdrożenie MDM. Zachęcamy do korzystania z takich rozwiązań w kontekście korporacyjnym, w celu jeszcze lepszego zabezpieczenia danych.
 
-### Definicja Wrażliwych Danych 
+### Definicja Wrażliwych Danych
 
 Dane wrażliwe w kontekście MASVS dotyczą zarówno danych uwierzytelniających użytkownika, jak i wszelkich innych danych uważanych za poufne w danym kontekście, takich jak:
 
-- Dane umożliwiające identyfikację osoby (PII), które momogą zostać wykorzystane do kradzieży tożsamości: numery dowodów osobistych oraz PESEL, numery kart kredytowych, numery kont bankowych, informacje medyczne;
+- Dane umożliwiające identyfikację osoby (PII), które mogą zostać wykorzystane do kradzieży tożsamości: numery dowodów osobistych oraz PESEL, numery kart kredytowych, numery kont bankowych, informacje medyczne;
 - Wysoce wrażliwe dane, których ujawnienie może prowadzić do utraty reputacji i/lub kosztów finansowych: Umowy prawne oraz finansowe, informacje objęte umowami o zachowaniu poufności, informacje biznesowe;
 - Wszelkie dane, które muszą być chronione przez prawo lub ze względu na zgodność z wymogami prawnymi.
 
@@ -21,16 +21,16 @@ Zdecydowanej większości problemów dotyczących ujawnienia danych można zapob
 | # | MSTG-ID | Description | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **2.1** | MSTG-STORAGE-1 | Dedykowane mechanizmy systemowe do przechowywania sekretów muszą być użyte do przechowywania danych wrażliwych, takich jak informacje umożliwiające identyfikację osoby (PII), dane uwierzytelniające lub klucze kryptograficzne. | x | x |
-| **2.2** | MSTG-STORAGE-2 | Dane wrażline nie powinny być przechowywane poza kontenerem aplikacji lub  dedykowaną przestrzenią w systemie operacyjnym | x | x |
-| **2.3** | MSTG-STORAGE-3 | Dane wrażline nie są zapisywane w logach aplikacji. | x | x |
-| **2.4** | MSTG-STORAGE-4 | Dane wrażline nie są udostępniane stronom trzecim, chyba że jest to niezbędne z punktu działania aplikacji. | x | x |
-| **2.5** | MSTG-STORAGE-5 | Dane wrażline nie są zapisywane do pamięci podręcznej klawiatury. | x | x |
-| **2.6** | MSTG-STORAGE-6 | Dane wrażline nie są ujawniane za pośrednictwem mechanizmów IPC. | x | x |
+| **2.2** | MSTG-STORAGE-2 | Dane wrażliwe nie powinny być przechowywane poza kontenerem aplikacji lub  dedykowaną przestrzenią w systemie operacyjnym | x | x |
+| **2.3** | MSTG-STORAGE-3 | Dane wrażliwe nie są zapisywane w logach aplikacji. | x | x |
+| **2.4** | MSTG-STORAGE-4 | Dane wrażliwe nie są udostępniane stronom trzecim, chyba że jest to niezbędne z punktu działania aplikacji. | x | x |
+| **2.5** | MSTG-STORAGE-5 | Dane wrażliwe nie są zapisywane do pamięci podręcznej klawiatury. | x | x |
+| **2.6** | MSTG-STORAGE-6 | Dane wrażliwe nie są ujawniane za pośrednictwem mechanizmów IPC. | x | x |
 | **2.7** | MSTG-STORAGE-7 | Dane wrażliwe, takie jak hasła lub kody PIN, nie są ujawniane przez interfejs użytkownika. | x | x |
 | **2.8** | MSTG-STORAGE-8 | Kopie zapasowe generowane przez system operacyjny nie zawierają żadnych wrażliwych danych. |   | x |
 | **2.9** | MSTG-STORAGE-9 | Aplikacja usuwa dane wrażliwe z zrzutów ekranów wykonywanych w trakcie przejścia aplikacji w tło. |  | x |
 | **2.10** | MSTG-STORAGE-10 | Aplikacja nie przechowuje w pamięci poufnych danych dłużej niż jest to konieczne, pamięć powinna być czyszczona od razu po ich wykorzystaniu. |  | x |
-| **2.11** | MSTG-STORAGE-11 | Aplikacja weryfikuje czy urządzenie jest zabezpieczeone przed anonimowym dostępem, na przykład poprzez kod PIN lub biometrię. |  | x |
+| **2.11** | MSTG-STORAGE-11 | Aplikacja weryfikuje czy urządzenie jest zabezpieczone przed anonimowym dostępem, na przykład poprzez kod PIN lub biometrię. |  | x |
 | **2.12** | MSTG-STORAGE-12 | Aplikacja informuje użytkownika o sposobie przetwarzania danych osobowych, a także o najlepszych praktykach w zakresie bezpieczeństwa, których użytkownik powinien przestrzegać podczas korzystania z aplikacji. |  | x |
 | **2.13** | MSTG-STORAGE-13 | Dane wrażliwe nie powinny być przechowywane lokalnie na urządzeniu mobilnym. Zamiast tego, niezbędne dane powinny być pobierane z serwera i przechowywane wyłącznie w pamięci. |  | x |
 | **2.14** | MSTG-STORAGE-14 | Jeśli poufne dane muszą być przechowywane lokalnie, powinny być zaszyfrowane przy użyciu kluczy pochodzących z dedykowanego koprocesora, odseparowanego sprzętowo od systemu operacyjnego (KeyStore lub KeyChain). Operacje kryptograficzne muszą odbywać się w bezpiecznym środowisku TEE (ang. Trusted Execution Environment). | x |
