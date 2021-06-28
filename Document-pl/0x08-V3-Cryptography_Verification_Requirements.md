@@ -1,23 +1,22 @@
 # V3: Wymagania dotyczące Kryptografii
 
-## Cele Kontrolne
+## Cele kontrolne
 
-Kryptografia jest niezbędnym elementem ochrony danych przechowywanych na urządzeniu mobilnym. Jest to również kategoria, w której sprawy mogą pójść strasznie źle, zwłaszcza gdy nie są przestrzegane standardowe konwencje. Celem kontroli w tym rozdziale jest zapewnienie, że zweryfikowana aplikacja korzysta z kryptografii zgodnie z najlepszymi praktykami branżowymi, w tym:
-
-- Korzystanie ze sprawdzonych bibliotek kryptograficznych;
-- Właściwy dobór i konfiguracja prymitywów kryptograficznych;
-- Odpowiedni generator liczb losowych wszędzie tam, gdzie wymagana jest losowość.
-
+Kryptografia jest niezbędnym elementem ochrony danych przechowywanych na urządzeniu mobilnym. Jest to kategoria, w której potencjalne błędy mogą mieć bardzo duży wpływ na bezpieczństwo aplikacji, w szczególności kiedy nie są zachowane odpowiednie standardy. Celem sprawdzeń w tym rozdziale jest potwierdzenie, że aplikacja korzysta z kryptografii zgodnie z najlepszymi praktykami branżowymi, w tym:
+- Korzysta ze sprawdzonych bibliotek kryptograficznych;
+- Wybrano właściwe moduły kryptograficzne dla odpowiednich zastosowań,
+- Korzysta z generatorów liczb losowych gwarantujących wymaganą losowość tam gdzie jest to wymagane. 
+- 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
-| **3.1** | MSTG-CRYPTO-1 | Aplikacja nie opiera się na kryptografii symetrycznej z zakodowanymi kluczami jako jedynej metodzie szyfrowania.| x | x |
-| **3.2** | MSTG-CRYPTO-2 | Aplikacja wykorzystuje sprawdzone implementacje prymitywów kryptograficznych. | x | x |
-| **3.3** | MSTG-CRYPTO-3 | Aplikacja używa prymitywów kryptograficznych, które są odpowiednie dla konkretnego przypadku użycia, skonfigurowane z parametrami zgodnymi z najlepszymi praktykami branżowymi. | x | x |
+| **3.1** | MSTG-CRYPTO-1 | Aplikacja nie korzysta wyłącznie z kryptografii symetrycznej z kluczami umieszczonymi w kodzie źródłowym.| x | x |
+| **3.2** | MSTG-CRYPTO-2 | Aplikacja korzysta wyłącznie ze sprawdzonych oraz uznawanych za bezpieczne modułów kryptograficznych. | x | x |
+| **3.3** | MSTG-CRYPTO-3 | Aplikacja używa modułów kryptograficznych, które są właściwe dla konkretnego przypadku użycia oraz skonfigurowane zgodnymi z najlepszymi praktykami branżowymi. | x | x |
 | **3.4** | MSTG-CRYPTO-4 | Aplikacja nie korzysta z protokołów ani algorytmów kryptograficznych, które są powszechnie uważane za przestarzałe pod względem bezpieczeństwa. | x | x |
-| **3.5** | MSTG-CRYPTO-5 | Aplikacja nie wykorzystuje ponownie tego samego klucza kryptograficznego do wielu celów. | x | x |
-| **3.6** | MSTG-CRYPTO-6 | Wszystkie wartości losowe są generowane przy użyciu wystarczająco bezpiecznego generatora liczb losowych. | x | x |
+| **3.5** | MSTG-CRYPTO-5 | Aplikacja nie wykorzystuje wielokrotnie tego samego klucza kryptograficznego do wielu celów. | x | x |
+| **3.6** | MSTG-CRYPTO-6 | Wszystkie wartości losowe są generowane przy użyciu generatorów liczb losowych gwarantujących wymaganą losowość. | x | x |
 
 ## Bibliografia
 
