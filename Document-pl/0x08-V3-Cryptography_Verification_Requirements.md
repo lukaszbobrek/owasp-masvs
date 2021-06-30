@@ -10,7 +10,7 @@ Kryptografia jest niezbędnym elementem ochrony danych przechowywanych na urząd
 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **3.1** | MSTG-CRYPTO-1 | Aplikacja nie opiera się na kryptografii symetrycznej z zakodowanymi kluczami jako jedynej metodzie szyfrowania.| x | x |
 | **3.2** | MSTG-CRYPTO-2 | Aplikacja wykorzystuje sprawdzone implementacje prymitywów kryptograficznych. | x | x |

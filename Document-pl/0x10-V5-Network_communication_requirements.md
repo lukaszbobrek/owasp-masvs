@@ -6,7 +6,7 @@ Celami kontrolnymi wymienionych w tej sekcji jest zapewnienie poufności i integ
 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **5.1** | MSTG-NETWORK-1 | Dane są szyfrowane w sieci za pomocą TLS. Bezpieczny kanał jest konsekwentnie używany w całej aplikacji. | x | x |
 | **5.2** | MSTG-NETWORK-2 | Ustawienia TLS są zgodne z aktualnymi najlepszymi praktykami lub jak najbardziej zbliżone, jeśli mobilny system operacyjny nie obsługuje zalecanych standardów. | x | x |

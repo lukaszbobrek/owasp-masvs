@@ -6,7 +6,7 @@ Celem tej kontroli jest zapewnienie, że podczas tworzenia aplikacji przestrzega
 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **7.1** | MSTG-CODE-1 |Aplikacja jest podpisana i zaopatrzona w ważny certyfikat, którego klucz prywatny jest odpowiednio chroniony.| x | x |
 | **7.2** | MSTG-CODE-2 | Aplikacja została zbudowana w celu wydania, z ustawieniami odpowiednimi dla kompilacji wydania (np. bez możliwości debugowania). | x | x |

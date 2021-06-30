@@ -18,7 +18,7 @@ Dane wrażliwe w kontekście MASVS dotyczą zarówno danych uwierzytelniających
 
 Zdecydowanej większości problemów dotyczących ujawnienia danych można zapobiec przestrzegając kilku prostych zasad. Większość wymogów wymienionych w niniejszym rozdziale jest obowiązkowa dla wszystkich poziomów weryfikacji.
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **2.1** | MSTG-STORAGE-1 | Dedykowane mechanizmy systemowe do przechowywania sekretów muszą być użyte do przechowywania danych wrażliwych, takich jak informacje umożliwiające identyfikację osoby (PII), dane uwierzytelniające lub klucze kryptograficzne. | x | x |
 | **2.2** | MSTG-STORAGE-2 | Dane wrażliwe nie powinny być przechowywane poza kontenerem aplikacji lub  dedykowaną przestrzenią w systemie operacyjnym | x | x |

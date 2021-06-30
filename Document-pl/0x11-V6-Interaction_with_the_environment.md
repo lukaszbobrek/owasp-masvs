@@ -6,7 +6,7 @@ Kontrole w tej grupie zapewniają, że aplikacja korzysta z interfejsów API pla
 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **6.1** | MSTG-PLATFORM-1 | Aplikacja żąda tylko minimalnego zestawu niezbędnych uprawnień. | x | x |
 | **6.2** | MSTG-PLATFORM-2 | Wszystkie dane wejściowe ze źródeł zewnętrznych i użytkownika są sprawdzane i w razie potrzeby oczyszczane. Obejmuje to dane otrzymane za pośrednictwem UI, mechanizmów IPC takich jak Intents, niestandardowych URL, oraz ze źródeł sieciowych.| x | x |

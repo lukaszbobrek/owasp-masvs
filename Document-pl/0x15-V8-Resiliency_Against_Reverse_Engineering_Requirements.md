@@ -22,7 +22,7 @@ Obowiązują następujące względy:
 
 ### Utrudnianie Analizy Dynamicznej i Manipulacji Kodu
 
-| # | MSTG-ID | Description | R |
+| # | MSTG-ID | Opis | R |
 | -- | ----------- | ---------------------- | - |
 | **8.1** | MSTG-RESILIENCE-1 | Aplikacja wykrywa i reaguje na obecność zrootowanego  lub jailbreakowanego urządzenia, ostrzegając użytkownika lub zamykając aplikację. | x |
 | **8.2** | MSTG-RESILIENCE-2 | Aplikacja zapobiega debugowaniu i/lub wykrywa i odpowiada na dołączony debuger. Należy uwzględnić wszystkie dostępne protokoły debugowania. | x |

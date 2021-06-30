@@ -10,7 +10,7 @@ Kategoria „V1” zawiera wymagania dotyczące architektury i projektowania apl
 
 Lista wymagań dotyczących poziomów MASVS-L1 oraz MASVS-L2 znajduje się poniżej:
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **1.1** | MSTG-ARCH-1 | Wszystkie komponenty aplikacji są rozpoznane i faktycznie potrzebne. | x | x |
 | **1.2** | MSTG-ARCH-2 | Mechanizmy bezpieczeństwa nie są zaimplmentowane wyłącznie po stronie klienckiej, ale również na serwerze. | x | x |

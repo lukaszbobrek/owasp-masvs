@@ -6,7 +6,7 @@ W większości przypadków użytkownicy logujący się do usługi zdalnej są in
 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
-| # | MSTG-ID | Description | L1 | L2 |
+| # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **4.1** | MSTG-AUTH-1 | Jeśli aplikacja zapewnia użytkownikom dostęp do usługi zdalnej, w zdalnym punkcie końcowym jest wykonywana pewna forma uwierzytelniania, taka jak uwierzytelnianie nazwą użytkownika/hasłem. | x | x |
 | **4.2** | MSTG-AUTH-2 | Jeśli używane jest stanowe zarządzanie sesjami, zdalny punkt końcowy używa losowo wygenerowanych identyfikatorów sesji do uwierzytelniania żądań klientów bez wysyłania poświadczeń użytkownika. | x | x |
