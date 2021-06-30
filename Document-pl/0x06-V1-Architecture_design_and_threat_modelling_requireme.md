@@ -1,12 +1,12 @@
 # V1: Wymagania dotyczące Architektury, Projektowania oraz Modelowania Zagrożeń 
 
-## Cele 
+## Cele kontrolne
 
 W idealnym świecie bezpieczeństwo byłoby brane pod uwagę we wszystkich fazach rozwoju oprogramowania. W rzeczywistości jednak bezpieczeństwo jest często rozważane wyłącznie na późnym etapie SDLC. Oprócz weryfikacji technicznych, MASVS wymaga opracowania procesów zapewniających, że bezpieczeństwo zostało wyraźnie uwzględnione podczas planowania architektury aplikacji mobilnej oraz że znane są role funkcjonalne i bezpieczeństwa wszystkich zastosowanych komponentów. Ponieważ większość aplikacji mobilnych pełni rolę klientów usług zdalnych, należy zadbać o to, aby również w stosunku do tych usług stosowane były odpowiednie standardy bezpieczeństwa – testowanie aplikacji mobilnej w izolacji od usług zewnętrznych nie jest wystarczające.
 
 Kategoria „V1” zawiera wymagania dotyczące architektury i projektowania aplikacji. Jest więc to jedyna kategoria, która nie odnosi się do technicznych przypadków testowych w OWASP Mobile Testing Guide. Aby omówić takie tematy, jak modelowanie zagrożeń, bezpieczne SDLC lub zarządzanie kluczami, użytkownicy MASVS powinni zapoznać się z odpowiednimi projektami OWASP i/lub innymi standardami, takimi jak te, do których linki znajdują się poniżej.
 
-## Security Verification Requirements
+## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
 Lista wymagań dotyczących poziomów MASVS-L1 oraz MASVS-L2 znajduje się poniżej:
 

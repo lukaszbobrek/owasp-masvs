@@ -1,6 +1,6 @@
 # V2: Wymagania dotyczące Przechowywanie Danych i Prywatności
 
-## Cele
+## Cele kontrolne
 
 Ochrona danych wrażliwych, takich jak dane uwierzytelniające oraz informacje poufne jest kluczowym elementem bezpieczeństwa urządzeń mobilnych. Po pierwsze, wrażliwe dane mogą zostać przypadkowo ujawnione innym aplikacjom działającym na tym samym urządzeniu, jeśli mechanizmy systemu operacyjnego, między innymi IPC, są wykorzystywane niewłaściwie. Dane mogą również być nieświadomie udostępniane do pamięci w chmurze, kopii zapasowych lub pamięci podręcznej klawiatury. Ponadto, w porównaniu z innymi typami urządzeń, smartfony są znacznie częściej gubione lub kradzione, co znacznie zwiększa ryzyko uzyskania fizycznego dostępu do urządzenia przez atakującego. Mając do na uwadze, dodatkowe zabezpieczenia mogą zostać wdrożone, w celu utrudnienia dostępu do wrażliwych danych.
 
