@@ -1,8 +1,8 @@
-# V4: Wymagania Dotyczące Uwierzytelniania i Zarządzania Sesją
+# V4: Wymagania Dotyczące Uwierzytelniania oraz Zarządzania Sesją
 
 ## Cele Kontrolne
 
-W większości przypadków użytkownicy logujący się do usługi zdalnej są integralną częścią ogólnej architektury aplikacji mobilnej. Mimo że większość logiki dzieje się w punkcie końcowym, MASVS określa pewne podstawowe wymagania dotyczące sposobu zarządzania kontami użytkowników i sesjami.
+W większości przypadków użytkownicy logujący się do usługi zdalnej są integralną częścią ogólnej architektury aplikacji mobilnej. Mimo że większość logiki dzieje się w punkcie końcowym, MASVS określa pewne podstawowe wymagania dotyczące sposobu zarządzania kontami użytkowników oraz sesjami.
 
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
