@@ -8,18 +8,18 @@ W większości przypadków użytkownicy logujący się do usługi zdalnej są in
 
 | # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
-| **4.1** | MSTG-AUTH-1 | Jeśli aplikacja zapewnia użytkownikom dostęp do usługi zdalnej, w zdalnym punkcie końcowym jest wykonywana pewna forma uwierzytelniania, taka jak uwierzytelnianie nazwą użytkownika/hasłem. | x | x |
-| **4.2** | MSTG-AUTH-2 | Jeśli używane jest stanowe zarządzanie sesjami, zdalny punkt końcowy używa losowo wygenerowanych identyfikatorów sesji do uwierzytelniania żądań klientów bez wysyłania poświadczeń użytkownika. | x | x |
-| **4.3** | MSTG-AUTH-3 | Jeśli używane jest uwierzytelnianie bezstanowe oparte na tokenach, serwer udostępnia token, który został podpisany przy użyciu bezpiecznego algorytmu. | x | x |
-| **4.4** | MSTG-AUTH-4 | Zdalny punkt końcowy kończy istniejącą sesję, gdy użytkownik się wyloguje. | x | x |
-| **4.5** | MSTG-AUTH-5 | Polityka haseł istnieje i jest wymuszana na zdalnym punkcie końcowym. | x | x |
-| **4.6** | MSTG-AUTH-6 | Zdalny punkt końcowy implementuje mechanizm ochrony przed przesyłaniem danych logowania zbyt wiele razy. | x | x |
-| **4.7** | MSTG-AUTH-7 | Sesje są unieważniane na zdalnym punkcie końcowym po wstępnie zdefiniowanym okresie nieaktywności, a tokeny dostępu wygasają. | x | x |
-| **4.8** | MSTG-AUTH-8 | Uwierzytelnianie biometryczne, jeśli istnieje, nie jest powiązane ze zdarzeniami (tj. przy użyciu interfejsu API, który po prostu zwraca „prawda” lub „fałsz”). Zamiast tego opiera się na odblokowaniu keychain/keystore. | | x |
-| **4.9** | MSTG-AUTH-9 | Drugi czynnik uwierzytelniania istnieje w zdalnym punkcie końcowym i wymaganie 2FA jest konsekwentnie egzekwowane.  | | x |
-| **4.10** | MSTG-AUTH-10 | Poufne transakcje wymagają uwierzytelniania krokowego. | | x |
+| **4.1** | MSTG-AUTH-1 | Jeśli aplikacja zapewnia użytkownikom dostęp do usługi zdalnej, to na serwerze jest wykonywana forma uwierzytelniania - na przykład uwierzytelnienie nazwą użytkownika oraz hasłem. | x | x |
+| **4.2** | MSTG-AUTH-2 | Jeśli używane jest stanowe zarządzanie sesjami, to serwer używa losowo wygenerowanych identyfikatorów sesji w celu uwierzytelniania żądań klientów bez wysyłania poświadczeń użytkownika. | x | x |
+| **4.3** | MSTG-AUTH-3 | Jeśli używane jest uwierzytelnianie bezstanowe oparte na tokenach, to serwer udostępnia token, który został podpisany przy użyciu bezpiecznego algorytmu. | x | x |
+| **4.4** | MSTG-AUTH-4 | Po stronie serwerowej unieważniana jest istniejąca sesja, gdy użytkownik się wyloguje. | x | x |
+| **4.5** | MSTG-AUTH-5 | Polityka haseł istnieje i jest weryfikowana na serwerze. | x | x |
+| **4.6** | MSTG-AUTH-6 | Serwer implementuje mechanizm ochrony przed przesyłaniem danych logowania zbyt wiele razy. | x | x |
+| **4.7** | MSTG-AUTH-7 | Sesje są unieważniane na serwerze po wstępnie zdefiniowanym okresie nieaktywności, a tokeny dostępu wygasają. | x | x |
+| **4.8** | MSTG-AUTH-8 | Uwierzytelnianie biometryczne, jeśli istnieje, to opiera się na odblokowaniu keychain/keystore. | | x |
+| **4.9** | MSTG-AUTH-9 | Drugi czynnik uwierzytelniania istnieje na serwerze i wymaganie dotyczące 2FA jest konsekwentnie egzekwowane.  | | x |
+| **4.10** | MSTG-AUTH-10 | Poufne transakcje wymagają uwierzytelniania wielo-etapowego. | | x |
 | **4.11** | MSTG-AUTH-11 | Aplikacja informuje użytkownika o wszystkich wrażliwych działaniach na jego koncie. Użytkownicy mogą przeglądać listę urządzeń, przeglądać informacje kontekstowe (adres IP, lokalizacja itp.) oraz blokować określone urządzenia. | | x |
-| **4.12** | MSTG-AUTH-12 | Modele autoryzacji powinny być zdefiniowane i wymuszane w zdalnym punkcie końcowym. | x | x |
+| **4.12** | MSTG-AUTH-12 | Modele autoryzacji powinny być zdefiniowane i wymuszane na serwerze. | x | x |
 
 ## Bibliografia
 

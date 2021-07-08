@@ -9,14 +9,14 @@ Celem tej kontroli jest zapewnienie, że podczas tworzenia aplikacji przestrzega
 | # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **7.1** | MSTG-CODE-1 |Aplikacja jest podpisana i zaopatrzona w ważny certyfikat, którego klucz prywatny jest odpowiednio chroniony.| x | x |
-| **7.2** | MSTG-CODE-2 | Aplikacja została zbudowana w celu wydania, z ustawieniami odpowiednimi dla kompilacji wydania (np. bez możliwości debugowania). | x | x |
+| **7.2** | MSTG-CODE-2 | Aplikacja została zbudowana w celu wydania, z ustawieniami kompilacyjnymi odpowiednimi dla  wydania (np. bez możliwości debugowania). | x | x |
 | **7.3** | MSTG-CODE-3 | Symbole do debugowania zostały usunięte z natywnych plików binarnych. | x | x |
-| **7.4** | MSTG-CODE-4 | Kod dla debugowania i kod pomocy programisty (np. kod testowy, backdoory, ukryte ustawienia) zostały usunięte. Aplikacja nie rejestruje pełnych błędów ani komunikatów debugowania. | x | x |
+| **7.4** | MSTG-CODE-4 | Kod do debugowania i kod dla pomocy programiście (np. kod testowy, backdoory, ukryte ustawienia) zostały usunięte. Aplikacja nie zapisuje pełnych błędów ani komunikatów debugowania. | x | x |
 | **7.5** | MSTG-CODE-5 | Wszystkie komponenty stron trzecich używane przez aplikację mobilną, takie jak biblioteki i frameworki, są identyfikowane i sprawdzane pod kątem znanych podatności bezpieczeństwa. | x | x |
 | **7.6** | MSTG-CODE-6 | Aplikacja przechwytuje i obsługuje możliwe wyjątki.| x | x |
 | **7.7** | MSTG-CODE-7 | Logika obsługi błędów w kontrolach bezpieczeństwa domyślnie odmawia dostępu. | x | x |
 | **7.8** | MSTG-CODE-8 | W kodzie niezarządzanym (unmanaged) pamięć jest przydzielana, czyszczona i używana w bezpieczny sposób.  | x | x |
-| **7.9** | MSTG-CODE-9 | Aktywowane są bezpłatne funkcje bezpieczeństwa oferowane przez toolchain, takie jak minimalizacja kodu bajtowego, ochrona stosu, obsługa PIE i automatyczne zliczanie referencji. | x | x |
+| **7.9** | MSTG-CODE-9 | Używane są bezpłatne funkcjonalności bezpieczeństwa oferowane przez toolchain, takie jak minimalizacja kodu bajtowego, ochrona stosu, obsługa PIE i automatyczne zliczanie referencji. | x | x |
 
 ## Bibliografia
 

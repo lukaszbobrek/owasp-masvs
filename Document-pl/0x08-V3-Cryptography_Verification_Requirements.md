@@ -3,10 +3,11 @@
 ## Cele kontrolne
 
 Kryptografia jest niezbędnym elementem ochrony danych przechowywanych na urządzeniu mobilnym. Jest to kategoria, w której potencjalne błędy mogą mieć bardzo duży wpływ na bezpieczństwo aplikacji, w szczególności kiedy nie są zachowane odpowiednie standardy. Celem sprawdzeń w tym rozdziale jest potwierdzenie, że aplikacja korzysta z kryptografii zgodnie z najlepszymi praktykami branżowymi, w tym:
+
 - Korzysta ze sprawdzonych bibliotek kryptograficznych;
 - Wybrano właściwe moduły kryptograficzne dla odpowiednich zastosowań,
-- Korzysta z generatorów liczb losowych gwarantujących wymaganą losowość tam gdzie jest to wymagane. 
-- 
+- Korzysta z generatorów liczb losowych gwarantujących wymaganą losowość tam gdzie jest to wymagane.
+
 ## Wymagania Dotyczące Weryfikacji Bezpieczeństwa
 
 | # | MSTG-ID | Opis | L1 | L2 |

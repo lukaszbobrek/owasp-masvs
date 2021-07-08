@@ -8,11 +8,11 @@ Kontrole w tej sekcji należy stosować w razie potrzeby na podstawie oceny ryzy
 
 Aby którakolwiek z kontroli z poniższej listy była skuteczna, aplikacja musi spełniać co najmniej wszystkie wymagania MASVS-L1 (tj. muszą istnieć solidne kontrole bezpieczeństwa), a także wszystkie wymagania o niższych numerach w V8. Na przykład, kontrole obfuskacji wymienione w punkcie „Utrudnianie Zrozumienia” muszą być połączone z „Utrudnianie Analizy Dynamicznej i Manipulacji Kodu” i „Wiązanie Urządzenia (Device Binding)”.
 
-**Należy pamiętać, że ochrony oprogramowania nigdy nie wolno używać jako zamiennika kontroli bezpieczeństwa. Kontrole wymienione w MASVR-R mają na celu dodanie specyficznych dla zagrożeń, dodatkowych kontroli ochronnych do aplikacji, które również spełniają wymagania bezpieczeństwa MASVS.**
+**Należy pamiętać, że ochron oprogramowania nigdy nie wolno używać jako zamiennika kontroli bezpieczeństwa. Kontrole wymienione w MASVR-R mają na celu dodanie dodatkowych kontroli ochronnych do aplikacji dla specyficznych zagrożeń, które również spełniają wymagania bezpieczeństwa MASVS.**
 
 Obowiązują następujące względy:
 
-1. Należy zdefiniować model zagrożeń, który jasno określa zagrożenia po stronie klienckiej, przed którymi się bronimy. Ponadto należy określić stopień ochrony, jaki ma zapewniać system. Na przykład określonym celem może być zmuszenie autorów ukierunkowanego złośliwego oprogramowania, które chcą podszyć się pod aplikację, do zainwestowania znacznego wysiłku w ręczną inżynierię wsteczną.
+1. Należy zdefiniować model zagrożeń, który jasno określa zagrożenia po stronie klienckiej, przed którymi się bronimy. Ponadto należy określić stopień ochrony, jaki ma zapewniać system. Na przykład określonym celem może być zmuszenie autorów ukierunkowanego złośliwego oprogramowania, którzy chcą podszyć się pod aplikację, do zainwestowania znacznie większego wysiłku w manualną inżynierię wsteczną.
 
 2. Model zagrożenia musi być wiarygodny i odpowiedni. Na przykład ukrywanie klucza kryptograficznego w implementacji white-box może okazać się zbędne, jeśli atakujący może po prostu dokonać code-liftu na white-boxie jako całości.
 
@@ -20,12 +20,12 @@ Obowiązują następujące względy:
 
 <!-- \pagebreak -->
 
-### Utrudnianie Analizy Dynamicznej i Manipulacji Kodu
+### Utrudnianie Analizy Dynamicznej oraz Manipulacji Kodu
 
 | # | MSTG-ID | Opis | R |
 | -- | ----------- | ---------------------- | - |
 | **8.1** | MSTG-RESILIENCE-1 | Aplikacja wykrywa i reaguje na obecność zrootowanego  lub jailbreakowanego urządzenia, ostrzegając użytkownika lub zamykając aplikację. | x |
-| **8.2** | MSTG-RESILIENCE-2 | Aplikacja zapobiega debugowaniu i/lub wykrywa i odpowiada na dołączony debuger. Należy uwzględnić wszystkie dostępne protokoły debugowania. | x |
+| **8.2** | MSTG-RESILIENCE-2 | Aplikacja zapobiega debugowaniu i/lub wykrywa i odpowiada na dołączony debugger. Należy uwzględnić wszystkie dostępne protokoły debugowania. | x |
 | **8.3** | MSTG-RESILIENCE-3 | Aplikacja wykrywa i reaguje na manipulowanie plikami wykonywalnymi i krytycznymi danymi we własnym sandboxie. | x |
 | **8.4** | MSTG-RESILIENCE-4 | Aplikacja wykrywa i reaguje na obecność na urządzeniu szeroko stosowanych narzędzi i frameworków do inżynierii wstecznej.| x |
 | **8.5** | MSTG-RESILIENCE-5 | Aplikacja wykrywa i reaguje na działanie jej w emulatorze.  | x |
@@ -42,7 +42,7 @@ Obowiązują następujące względy:
 
 <!-- \pagebreak -->
 
-### Utrudnianie Zrozumienia
+### Utrudnianie Zrozumienia Działania Aplikacji
 
 | # | MSTG-ID | Description | R |
 | -- | ----------- | ---------------------- | - |
@@ -53,7 +53,7 @@ Obowiązują następujące względy:
 
 | # | MSTG-ID | Description | R |
 | -- | ----------- | ---------------------- | - |
-| **8.13** | MSTG-RESILIENCE-13 | Jako dogłębną ochronę, oprócz solidnego zabezpieczenia stron komunikujących się, można zastosować szyfrowanie payloadu na poziomie aplikacji, aby jeszcze bardziej utrudnić podsłuchiwanie. | x |
+| **8.13** | MSTG-RESILIENCE-13 | Jako dogłębną ochronę, oprócz solidnego zabezpieczenia stron komunikujących się, można zastosować szyfrowanie danych na poziomie aplikacji, aby jeszcze bardziej utrudnić podsłuchiwanie kanału komunikacyjnego. | x |
 
 <!-- \pagebreak -->
 

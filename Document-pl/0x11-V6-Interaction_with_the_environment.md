@@ -9,13 +9,13 @@ Kontrole w tej grupie zapewniają, że aplikacja korzysta z interfejsów API pla
 | # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
 | **6.1** | MSTG-PLATFORM-1 | Aplikacja żąda tylko minimalnego zestawu niezbędnych uprawnień. | x | x |
-| **6.2** | MSTG-PLATFORM-2 | Wszystkie dane wejściowe ze źródeł zewnętrznych i użytkownika są sprawdzane i w razie potrzeby oczyszczane. Obejmuje to dane otrzymane za pośrednictwem UI, mechanizmów IPC takich jak Intents, niestandardowych URL, oraz ze źródeł sieciowych.| x | x |
-| **6.3** | MSTG-PLATFORM-3 | Aplikacja nie eksportuje wrażliwych funkcji za pośrednictwem niestandardowych URL schemes, chyba że te mechanizmy są odpowiednio chronione. | x | x |
-| **6.4** | MSTG-PLATFORM-4 | Aplikacja nie eksportuje wrażliwych funkcji za pośrednictwem procesami IPC, chyba że mechanizmy te są odpowiednio chronione. | x | x |
-| **6.5** | MSTG-PLATFORM-5 | JavaScript jest wyłączony w WebViews, chyba że jest to wyraźnie wymagane. | x | x |
-| **6.6** | MSTG-PLATFORM-6 | WebView są skonfigurowane tak, aby zezwalały tylko na minimalny zestaw obsługiwanych protokołów (najlepiej by wspierał jedynie HTTPS). Potencjalnie niebezpieczne protokoły takie jak: file, tel oraz app-id nie powinny być obsługiwane | x | x |
-| **6.7** | MSTG-PLATFORM-7 | Jeśli natywne metody aplikacji są udostępniane dla WebView, sprawdź, czy WebView renderuje jedynie kod JavaScript zawarty w paczce aplikacji. | x | x |
-| **6.8** | MSTG-PLATFORM-8 | Deserializacja obiektu, jeśli istnieje, jest implementowana przy użyciu bezpiecznych interfejsów API dla serializacji. | x | x |
+| **6.2** | MSTG-PLATFORM-2 | Wszystkie dane wejściowe ze źródeł zewnętrznych i użytkownika są sprawdzane i w razie potrzeby wyczyszczane. Obejmuje to dane otrzymane za pośrednictwem Interfejsu Graficznego (UI), mechanizmów IPC takich jak Intents, niestandardowych URL, oraz ze źródeł sieciowych.| x | x |
+| **6.3** | MSTG-PLATFORM-3 | Aplikacja nie eksportuje wrażliwych funkcjonalności za pośrednictwem niestandardowych URL schemes, chyba że te mechanizmy są odpowiednio chronione. | x | x |
+| **6.4** | MSTG-PLATFORM-4 | Aplikacja nie eksportuje wrażliwych funkcjonalności za pośrednictwem procesów IPC, chyba że mechanizmy te są odpowiednio chronione. | x | x |
+| **6.5** | MSTG-PLATFORM-5 | JavaScript jest wyłączony w WebViews, chyba, że jest to wyraźnie wymagane. | x | x |
+| **6.6** | MSTG-PLATFORM-6 | WebView są skonfigurowane tak, aby zezwalało tylko na minimalny zestaw obsługiwanych protokołów (najlepiej by wspierał jedynie protokół HTTPS). Potencjalnie niebezpieczne protokoły takie jak: file, tel oraz app-id nie powinny być obsługiwane | x | x |
+| **6.7** | MSTG-PLATFORM-7 | Jeśli natywne metody/funkcje aplikacji są udostępniane dla WebView, sprawdź, czy WebView renderuje jedynie kod JavaScript zawarty w paczce aplikacji. | x | x |
+| **6.8** | MSTG-PLATFORM-8 | Deserializacja obiektu, jeżeli ma miejsce, jest implementowana przy użyciu bezpiecznych interfejsów API dla serializacji. | x | x |
 | **6.9** | MSTG-PLATFORM-9 | Aplikacja zabezpiecza się przed atakami nakładek ekranowych (screen overlay attacks). (tylko Android) |  | x |
 | **6.10** | MSTG-PLATFORM-10 | Pamięć podręczna, zwykła pamięć i załadowane zasoby dla WebView (JavaScript itp.) powinny zostać wyczyszczone przed zniszczeniem WebView. |  | x |
 | **6.11** | MSTG-PLATFORM-11 | Sprawdź, czy aplikacja uniemożliwia korzystanie z niestandardowych klawiatur innych firm za każdym razem, gdy wprowadzane są poufne dane (tylko iOS). | | x |

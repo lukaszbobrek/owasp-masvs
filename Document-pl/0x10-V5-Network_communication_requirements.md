@@ -8,12 +8,12 @@ Celami kontrolnymi wymienionych w tej sekcji jest zapewnienie poufności i integ
 
 | # | MSTG-ID | Opis | L1 | L2 |
 | -- | ---------- | ---------------------- | - | - |
-| **5.1** | MSTG-NETWORK-1 | Dane są szyfrowane w sieci za pomocą TLS. Bezpieczny kanał jest konsekwentnie używany w całej aplikacji. | x | x |
+| **5.1** | MSTG-NETWORK-1 | Dane są szyfrowane w sieci za pomocą TLS. Bezpieczny kanał komunikacyjny jest konsekwentnie używany w całej aplikacji. | x | x |
 | **5.2** | MSTG-NETWORK-2 | Ustawienia TLS są zgodne z aktualnymi najlepszymi praktykami lub jak najbardziej zbliżone, jeśli mobilny system operacyjny nie obsługuje zalecanych standardów. | x | x |
-| **5.3** | MSTG-NETWORK-3 | Aplikacja weryfikuje certyfikat X.509 zdalnego punktu końcowego po ustanowieniu bezpiecznego kanału. Akceptowane są tylko certyfikaty podpisane przez zaufany urząd certyfikacji. | x | x |
-| **5.4** | MSTG-NETWORK-4 | Aplikacja używa własnego magazynu certyfikatów lub stosuje SSL Pinning dla punktu końcowego lub klucza publicznego, a następnie nie nawiązuje połączeń z punktami końcowymi obsługującymi inny certyfikat lub klucz, nawet jeśli jest podpisany przez zaufany urząd certyfikacji. |   | x |
-| **5.5** | MSTG-NETWORK-5 | Aplikacja nie opiera się na jednym niezabezpieczonym kanale komunikacji (e-mail lub SMS) w przypadku krytycznych operacji, takich jak rejestracje i odzyskiwanie konta. |  | x |
-| **5.6** | MSTG-NETWORK-6 | Aplikacja zależna jest od aktualnych bibliotek połączeniowych i zabezpieczeń |  | x |
+| **5.3** | MSTG-NETWORK-3 | Aplikacja weryfikuje certyfikat X.509 serwera po ustanowieniu bezpiecznego kanału komunikacyjnego. Akceptowane są tylko certyfikaty podpisane przez zaufany urząd certyfikacji. | x | x |
+| **5.4** | MSTG-NETWORK-4 | Aplikacja używa własnego magazynu certyfikatów, lub stosuje SSL Pinning lub klucza publicznego dla serwera, a następnie nie nawiązuje połączeń z punktami końcowymi obsługującymi inny certyfikat lub klucz, nawet jeśli jest podpisany przez zaufany urząd certyfikacji. |   | x |
+| **5.5** | MSTG-NETWORK-5 | Aplikacja nie opiera się na jednym niezabezpieczonym kanale komunikacji (e-mail lub SMS) w przypadku krytycznych operacji, takich jak rejestracja oraz odzyskiwanie konta. |  | x |
+| **5.6** | MSTG-NETWORK-6 | Aplikacja polega na aktualnych bibliotekach połączeniowych i zabezpieczeń |  | x |
 
 ## Bibliografia
 

@@ -5,6 +5,7 @@
 - security controls - kontrole bezpieczeństwa (?)
 - software protection controls - kontrole bezpieczeństwa poprzez oprogramowanie
 - controls - kontrole; kontrole dla [...]
+- zdalny punkt końcowy - serwer
 - tampering - sfałszowanie / naruszenie kodu
 - resiliency - niezawodność /odporność
 - extract - wydobyć
